@@ -1,7 +1,11 @@
 const express = require('express')
 require('./utils/database')
+ 
+const teamRoute = require('./routes/team')
 
 const app = express()
+
+app.use(teamRoute)
 
 const port = process.env.PORT || 5000
 
