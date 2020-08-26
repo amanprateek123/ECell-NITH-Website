@@ -2,10 +2,12 @@ const express = require('express')
 require('./utils/database')
  
 const teamRoute = require('./routes/team')
+const galleryRoute = require('./routes/gallery')
 
 const app = express()
 
 app.use(teamRoute)
+app.use(galleryRoute)
 
 const port = process.env.PORT || 5000
 
