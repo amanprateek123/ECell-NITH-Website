@@ -13,6 +13,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import {Link} from 'react-router-dom'
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +68,7 @@ const Example = (props) => {
               <NavLink href="/contacts">Contacts</NavLink>
             </NavItem>
           </Nav>
-          {/* <NavbarText>Simple Text</NavbarText> */}
+          <Link to="/admin"> <NavbarText>Admin</NavbarText></Link>
         </Collapse>
       </Navbar>
     </div>
