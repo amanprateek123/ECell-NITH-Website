@@ -1,19 +1,17 @@
 import React from 'react';
-import Home from './containers/Home/Home';
-import { Route, Switch } from 'react-router-dom';
+import Home from './containers/Home/Home'
+import {Route,Switch} from 'react-router-dom'
 import './App.css';
-import Navbar from './containers/Navbar/Nav';
-import Gallery from './containers/Gallery/Gallery';
+import Navbar from './containers/Navbar/Nav'
 
 function App() {
   return (
-    <React.Fragment>
-      <Navbar />
-      <Gallery />
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
-    </React.Fragment>
+      <React.Fragment>
+        <Navbar/>
+        <Switch>
+        <Route path="/" component={Home} exact/>
+        </Switch>
+      </React.Fragment>
   );
 }
 
