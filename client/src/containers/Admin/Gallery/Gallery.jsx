@@ -15,18 +15,17 @@ export default function Gallery() {
         console.log('hello')
         var input = document.querySelector('#img');
         var data = new FormData()
-        data.append('img',file)
+        data.append('gallery',file)
         console.log(data)
         return (
             fetch('/admin/gallery',{
-                headers:{
-                    'Content-Type': 'application/json'
-                },
                 method:'POST',
-                body: JSON.stringify(data)
+                body: data
             }).then(res=>res.json()).then(res=>
                 console.log(res)
-            )
+            ).catch(err => {
+                console.log(err);
+            })
         )
         
     }

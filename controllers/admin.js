@@ -1,13 +1,12 @@
 const Gallery = require('../models/gallery')
 
-
 //gallery
 exports.postGallery = async (req,res)=>{
     console.log(req.body)
-    //    const gallery = new Gallery(req.body)
+       const galleryImg = new Gallery()
        try{
-        //    await gallery.save()
-           res.json({message:"Upload successfully"})
+           await galleryImg.save()
+           res.send({message:"Upload successfully"})
        }
        catch(e){
            console.log(e)
