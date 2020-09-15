@@ -2,12 +2,14 @@ const Gallery = require('../models/gallery')
 
 
 //gallery
-exports.postGallery = async (req,res)=>{
-    res.send("Uploaded")
-}
-
 exports.getGallery = async (req,res)=>{
-     Gallery.find({}).then(data => res.json(data)).catch(e=>{
-         res.json(e)
-     })
+   try{
+    const gallery =  await Gallery.find({})
+    res.set('Content-Type','image/jpg')
+    res.send(gallery[0].image)
+   }
+   catch(e){
+       res.status(404).send({error:e.message})
+   }
+    
 }

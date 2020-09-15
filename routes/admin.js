@@ -1,12 +1,22 @@
 const express = require('express')
 const adminCtrl = require('../controllers/admin')
 const multer = require('multer')
+const path = require('path')
 
 const router = new express.Router()
 
+// const fileStorage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//         cb(null, path.join('public', 'images'))
+//     },
+//     filename: (req, file, cb) => {
+//         cb(null, file.originalname + '_' + new Date().getTime())
+//     }
+// });
+
 const upload = multer({
     limits:{
-        fileSize:100000
+        fileSize:1000000000
     },
     fileFilter(req,file,cb){
           if(!file.originalname.match(/\.(png|jpg|jpeg)$/)){

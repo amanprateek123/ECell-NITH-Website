@@ -13,9 +13,9 @@ export default function Gallery() {
     
     const postGallery = ()=>{
         console.log('hello')
-        var input = document.querySelector('#img');
+        var input = document.querySelector('#img').files;
         var data = new FormData()
-        data.append('gallery',file)
+        data.append('gallery',input[0])
         console.log(data)
         return (
             fetch('/admin/gallery',{

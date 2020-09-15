@@ -14,6 +14,7 @@ app.use(express.json())
 // app.use(teamRoute)
 // app.use(galleryRoute)
 app.use('/admin',adminRoute)
+app.use(galleryRoute)
 
 app.use(express.static(path.join(__dirname, 'public')));
 if (process.env.NODE_ENV === 'production') {
