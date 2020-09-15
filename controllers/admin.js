@@ -3,7 +3,7 @@ const Gallery = require('../models/gallery')
 //gallery
 exports.postGallery = async (req,res)=>{
     let prod = req.file.buffer
-    console.log(prod)
+    console.log(req)
        const galleryImg = new Gallery()
        galleryImg.image = prod
        try{

@@ -1,16 +1,16 @@
-.container{
+.containers{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
     grid-gap: 1em;
     grid-auto-rows: minmax(300px,auto);
     margin: 4.5em;
 }
-.container div{
+.containers div{
     border: 1px solid black;
     padding: 1em;
     background: #eee;
 }
-.container > div:nth-child(odd){
+.containers > div:nth-child(odd){
     background: #ddd;
 }
  .b-1{
