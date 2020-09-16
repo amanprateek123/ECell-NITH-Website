@@ -22,7 +22,7 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" dark style={{color:'skyblue'}} expand="md">
+      <Navbar color="dark" dark style={{color:'skyblue'}} expand="md" >
         <NavbarBrand href="/">E-Cell Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -64,6 +64,9 @@ const Example = (props) => {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem className="ml-2">
+              <NavLink href="/gallery">Gallery</NavLink>
+            </NavItem>
             <NavItem className="ml-2">
               <NavLink href="/contacts">Contacts</NavLink>
             </NavItem>
