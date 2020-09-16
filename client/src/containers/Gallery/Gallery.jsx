@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import './Gallery.scss';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 function typedArrayToURL(typedArray, mimeType) {
   return URL.createObjectURL(new Blob([typedArray], {type: mimeType}))
@@ -24,12 +25,11 @@ export default function Galleries() {
       return url
    }
   return (
-    img?<div>
+    img.length?<div>
       <p className='head'> Gallery</p>
       <div className='containers container'>
         <div className="b-1 box">
           <div style={{backgroundImage:`url(${hi(img[0])})`}}>
-
           </div>
         </div>
         {img.slice(1).map(i=>(
@@ -40,6 +40,8 @@ export default function Galleries() {
           </div>
         ))}
               </div>
-    </div>:null
+    </div>:<div className="spin">
+      <CircularProgress/>
+    </div>
   );
 };
