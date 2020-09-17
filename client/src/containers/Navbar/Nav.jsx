@@ -55,9 +55,10 @@ const Example = (props) => {
                 Team
               </DropdownToggle>
               <DropdownMenu right>
+              <NavLink href='/team'>
                 <DropdownItem>
-                 Present
-                </DropdownItem>
+                  Present
+                </DropdownItem></NavLink>                
                 <DropdownItem divider />
                 <DropdownItem>
                   Alumni
@@ -65,7 +66,7 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className="ml-2">
-              <NavLink href="/gallery">Gallery</NavLink>
+              <NavLink href="/gallery" >Gallery</NavLink>
             </NavItem>
             <NavItem className="ml-2">
               <NavLink href="/contacts">Contacts</NavLink>

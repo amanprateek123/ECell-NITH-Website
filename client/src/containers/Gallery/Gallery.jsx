@@ -9,11 +9,10 @@ function typedArrayToURL(typedArray, mimeType) {
 export default function Galleries() {
    const [img,setImg] = useState([])
    useEffect(()=>{
-       fetch('/gallery').then(res=>res.json()).then(res=>
-             {
+       fetch('/gallery').then(res=>res.json()).then(res=>{
               console.log(res)
-                 setImg(res)}
-       )
+              setImg(res)
+            })
    },[])
    let url = ''
    function hi(arr){
@@ -40,7 +39,8 @@ export default function Galleries() {
           </div>
         ))}
               </div>
-    </div>:<div className="spin">
+    </div>:
+    <div className="spin">
       <CircularProgress/>
     </div>
   );

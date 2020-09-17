@@ -6,7 +6,7 @@ import Navbar from './containers/Navbar/Nav'
 import Admin from './containers/Admin/Admin'
 import E404 from './containers/E404/E404'
 import Gallery from './containers/Gallery/Gallery'
-
+import Team from './containers/Team/Team'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/admin" component={Admin} />
         <Route path="/gallery" component={Gallery} />
+        <Route path="/team" component={Team} />
         <Route component={E404} />
       </Switch>
     </React.Fragment>
