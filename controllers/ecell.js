@@ -1,5 +1,5 @@
 const Gallery = require('../models/gallery')
-
+const Team = require('../models/team')
 
 //gallery
 exports.getGallery = async (req,res)=>{
@@ -12,4 +12,14 @@ exports.getGallery = async (req,res)=>{
        res.status(404).send({error:e.message})
    }
     
+}
+
+exports.getTeam = async (req,res)=>{
+    try{
+        const team = await Team.find({})
+        res.json(team)
+    }
+    catch(e){
+        res.status(404).send({error:e.message})   
+    }
 }

@@ -10,7 +10,6 @@ export default function Gallery() {
         setFile(e.target.value)
     }
  
-    
     const postGallery = ()=>{
         console.log('hello')
         var input = document.querySelector('#img').files;

@@ -10,6 +10,7 @@ import {
 import CategoryIcon from '@material-ui/icons/Category';
 import FileIcon from '@material-ui/icons/FileCopy';
 import Gallery from './Gallery/Gallery'
+import Team from './Team/Team'
 
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
@@ -97,8 +98,8 @@ export default function Admin(props) {
                 </div>
                 <div className="col-md-8">
                     <div className="content">
-                        {tab == 'team' ?
-                            null
+                        {tab == 'teams' ?
+                            <Team/>
                             : tab == 'gallery' ?
                                <Gallery/> : null}
                     </div>
