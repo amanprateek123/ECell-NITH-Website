@@ -12,7 +12,7 @@ const teamSchema  = new mongoose.Schema({
     email:{
         type:String,
         trim:true,
-        uppercase:true
+        lowercase:true
     },
     post:{
         type:String

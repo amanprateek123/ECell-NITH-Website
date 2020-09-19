@@ -18,13 +18,21 @@ exports.postGallery = async (req,res)=>{
 }
 //team
 exports.postTeam = async (req,res)=>{
-     let data = req.body
-     const team = new Team(data)
+     let data = JSON.parse(req.body.team)
+     let img = req.file.buffer
+     const teams = new Team()
+     teams.name = data.name
+     teams.email = data.email
+     teams.phone = data.phone
+     teams.post = data.post
+     teams.LinkedinId = data.linkedIn
+     teams.image = img
      try{
-         await team.save()
-         res.json('Details upload successfully')
+         await teams.save()
+         res.json({msg:'Details upload successfully',status:200})
      }
      catch(e){
-         res.json({error:e.message})
+         res.json({error:e.message,status:404})
+         console.log(e)
      }
 }
