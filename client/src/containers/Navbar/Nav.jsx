@@ -50,21 +50,9 @@ const Example = (props) => {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <UncontrolledDropdown className="ml-2" nav inNavbar>
-              <DropdownToggle nav caret>
-                Team
-              </DropdownToggle>
-              <DropdownMenu right>
-              <NavLink href='/team'>
-                <DropdownItem>
-                  Present
-                </DropdownItem></NavLink>                
-                <DropdownItem divider />
-                <DropdownItem>
-                  Alumni
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem className="ml-2">
+              <NavLink href="/team">Team</NavLink>
+            </NavItem>
             <NavItem className="ml-2">
               <NavLink href="/gallery" >Gallery</NavLink>
             </NavItem>
