@@ -1,10 +1,14 @@
 import React from 'react'
 import './Team.scss'
+import Members from './Members/Members'
 
 export default function Team() {
     return (
-        <div>
-            Team
+        <React.Fragment>
+            <div>
+                Team
         </div>
+            <Members />
+        </React.Fragment>
     )
 }
