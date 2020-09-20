@@ -1,21 +1,69 @@
-.container{
+.container1{
     width: 270px;
     height: 370px;
     margin: auto;
-    background-color: black;
+    background-color: #eee;
+    padding:1em
 }
-.container div{
+.container1:hover{
+    background-color: black;
+    transform: scale(1.05);
+    transition: 0.1s ease;
+}
+/* .container1 div{
     
 width: 90%;
 margin:0 auto ;
-}
-.container div img{
+} */
+/* .container1 div img{
     border-radius: 15px 60px 15px 60px;
-    margin-top:10px ;
     width: 100%;
+} */
+.pics{
+    background-image: url("https://picsum.photos/200");
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px 60px 15px 60px;
 }
-h2,h3{
-    margin: 20px;
-    text-align: center;
+.container1:hover .pics{
+    opacity: 0.7;
+}
+.social{
     color: white;
+    flex-direction: column;
+    width: 20%;
+    opacity: 1;
+    align-items: center;
+    display: none;
+}
+.container1:hover .social{
+    display: flex;
+}
+
+.name{
+    margin: 0.5em 0;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.post{
+    margin: 0.5em 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.container1:hover .name{
+    color: white;
+}
+.container1:hover .post{
+    color: white;
+}
+.email{
+    color: blue;
+    font-size: 14px;
+    text-align: center;
 }
