@@ -1,0 +1,21 @@
+.container{
+    width: 270px;
+    height: 370px;
+    margin: auto;
+    background-color: black;
+}
+.container div{
+    
+width: 90%;
+margin:0 auto ;
+}
+.container div img{
+    border-radius: 15px 60px 15px 60px;
+    margin-top:10px ;
+    width: 100%;
+}
+h2,h3{
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
