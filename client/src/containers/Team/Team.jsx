@@ -25,7 +25,7 @@ export default function Team() {
             <div className="row container m-auto" style={{marginRight:'0',height:'auto'}}>
                 {team.length?
                 team.map(item=>(
-                <div className="col-4 mb-4">
+                <div className="col-md-4 mb-4">
                    <Members team={item} />
                 </div>
                 ))

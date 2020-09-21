@@ -2,12 +2,12 @@
     width: 270px;
     height: 350px;
     margin: auto;
-    background-color: #eee;
+    background-color: black;
     padding:1em;
     border-radius: 20px;
 }
 .container1:hover{
-    background-color: black;
+    background-color: rgba(135, 206, 235,0.3);
     transform: scale(1.03);
     transition: 1s ease;
 }
@@ -47,21 +47,21 @@ margin:0 auto ;
 .name{
     margin: 1em 0 0.5em 0;
     text-align: center;
-    color: black;
+    color:white;
     font-size: 18px;
 }
 .post{
     margin: 0.5em 0;
     text-align: center;
-    color: black;
+    color:white;
     font-weight: bold;
     font-size: 16px; 
 }
 .container1:hover .name{
-    color: white;
+    color: black;
 }
 .container1:hover .post{
-    color: white;
+    color: black;
 }
 .email{
     color: blue;
