@@ -16,6 +16,7 @@ export default function Team() {
     console.log(team)
     return (
         <React.Fragment>
+            <div style={{backgroundColor:'#eee'}} >
             <div className="team_head" >
                 E-Cell Team
             </div>
@@ -33,6 +34,7 @@ export default function Team() {
                 <CircularProgress/>
               </div>}
 
+            </div>
             </div>
         </React.Fragment>
     )
