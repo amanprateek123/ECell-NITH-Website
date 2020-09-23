@@ -1,0 +1,78 @@
+.containers{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(300px,auto);
+    margin: 3em;
+}
+.heads{
+    font-size: 45px;
+    color: black;
+    padding: 0.5em 0;
+    margin: 0 0 0.5em 0;
+    border-bottom:1px solid #ddd ;
+    text-align: center;
+}
+
+// .containers div{
+//     background: #eee;
+// }
+// .containers > div:nth-child(odd){
+//     background: #ddd;
+// }
+ .b1{
+     grid-column:1/3 ;
+     grid-row: 1/3;
+     border-radius: 20px;
+     div{
+        background-image: url("https://www.pagalguy.com/wp-content/uploads/2018/10/E94F6CAC710489E8.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        padding: 0!important;
+        border: none;
+        border-radius: 20px;
+     }     
+ }
+ .box{
+     border-radius: 20px;
+     
+ }
+ .b2{
+    div{
+       background-image: url("https://images.shiksha.com/mediadata/images/1550666036phpEs1rUP_g.png");
+       background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          padding: 0!important;
+          border: none;
+          border-radius: 20px;
+          
+    }
+}
+.text{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+}
+.desc{
+    position: relative;
+    display: none;
+    span{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        padding: 10px;
+    }
+}
+.cont:hover .desc {
+    display: block;
+
+}
+.cont:hover{
+    opacity: 0.8;
+}

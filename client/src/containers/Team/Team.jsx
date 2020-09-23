@@ -16,7 +16,7 @@ export default function Team() {
     console.log(team)
     return (
         <React.Fragment>
-            <div style={{backgroundColor:'#eee'}} >
+            <div>
             <div className="team_head" >
                 E-Cell Team
             </div>
