@@ -11,6 +11,7 @@ import CategoryIcon from '@material-ui/icons/Category';
 import FileIcon from '@material-ui/icons/FileCopy';
 import Gallery from './Gallery/Gallery'
 import Team from './Team/Team'
+import Initiatives from './Initiative/Initiative'
 
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
@@ -66,6 +67,12 @@ export default function Admin(props) {
                                             </ListItemIcon>
                                             <ListItemText id="tab" primary="Team" />
                                         </ListItem>
+                                        <ListItem button selected={tab == 'init'} onClick={() => setTab('init')}>
+                                            <ListItemIcon>
+                                                <FileIcon />
+                                            </ListItemIcon>
+                                            <ListItemText id="tab" primary="Initiatives" />
+                                        </ListItem>
 
                                     </List>
 
@@ -101,7 +108,9 @@ export default function Admin(props) {
                         {tab == 'teams' ?
                             <Team/>
                             : tab == 'gallery' ?
-                               <Gallery/> : null}
+                               <Gallery/>:
+                               tab==='init'?
+                               <Initiatives/> : null}
                     </div>
                 </div>
             </div>
