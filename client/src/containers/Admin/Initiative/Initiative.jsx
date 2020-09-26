@@ -18,7 +18,7 @@ export default function Team() {
         data.append('eventImg',pic[0])
         data.append('event',JSON.stringify(init))
         return(
-            fetch('/admin/team',{
+            fetch('/admin/initiative',{
                 method:'POST',
                 body: data
             }).then(res=>res.json()).then(res=>
@@ -33,7 +33,7 @@ export default function Team() {
 
     return (
         <Paper>
-             <h3 className="p-2" style={{textAlign:'center'}}>Team</h3>
+             <h3 className="p-2" style={{textAlign:'center'}}>Initiatives</h3>
              <form encType="multipart/form-data" onSubmit={(e)=>{e.preventDefault();presentEvent()}} >
              <div className="frm">
                 <label>Event Name<span style={{color:'red'}} >*</span></label>

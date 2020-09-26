@@ -16,7 +16,7 @@ export default function Team() {
     console.log(team)
     return (
         <React.Fragment>
-            <div>
+        {team.length  ?  <div>
             <div className="team_head" >
                 E-Cell Team
             </div>
@@ -24,18 +24,18 @@ export default function Team() {
                 <NavLink to='/alumni' style={{float:'right',margin:'0 1em',color:'skyblue',fontWeight:'bold',textDecoration:'none'}} >View Alumni Team</NavLink>
             </div>
             <div className="row container m-auto" style={{marginRight:'0',height:'auto'}}>
-                {team.length?
+                {
                 team.map(item=>(
                 <div className="col-md-4 mb-4">
                    <Members team={item} />
                 </div>
                 ))
-                :<div className="spin">
-                <CircularProgress/>
-              </div>}
+                }
 
             </div>
-            </div>
+            </div>:<div className="spin">
+                <CircularProgress/>
+              </div>}
         </React.Fragment>
     )
 }

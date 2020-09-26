@@ -1,5 +1,6 @@
 const Gallery = require('../models/gallery')
 const Team = require('../models/team')
+const Init = require('../models/initiative')
 
 //gallery
 exports.postGallery = async (req,res)=>{
@@ -35,4 +36,22 @@ exports.postTeam = async (req,res)=>{
          res.json({error:e.message,status:404})
          console.log(e)
      }
+}
+
+exports.postEvent = async (req,res)=>{
+    let data = JSON.parse(req.body.event)
+    let img = req.file.buffer
+    let init = new Init()
+    init.eventName = data.name
+    init.description = data.description
+    init.image = img
+    try{
+        await init.save()
+        res.json({msg:'Details upload successfully',status:200})
+        console.log('Success!')
+    }
+    catch(e){
+        res.json({error:e.message,status:404})
+         console.log(e)
+    }
 }
