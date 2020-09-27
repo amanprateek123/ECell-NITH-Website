@@ -1,0 +1,43 @@
+
+.vision{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: white;
+}
+.pop{
+    width: 30%;
+    border: solid  #33d6ff 1px;
+    cursor: pointer;
+}
+.pop:hover{
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+transform-origin:left ;
+    transition: 2s ease-in-out;
+}
+
+.image{
+    width: 20%;
+    margin: 10px auto;
+}
+img{
+    width: 100%;
+}
+.heading{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.note{
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align: center;
+    margin: 20px;
+}
+.welcome{
+    margin: 40px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
