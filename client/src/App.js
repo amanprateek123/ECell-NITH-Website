@@ -12,7 +12,6 @@ import Initiatives from './containers/Initiatives/Initiatives';
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/initiatives" component={Initiatives} />
