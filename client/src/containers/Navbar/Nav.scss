@@ -9,7 +9,10 @@
     }
 }
 .mainImg{
-    background-image: url('https://img.wallpapersafari.com/desktop/1280/1024/75/70/GLNith.jpg');
+    background: linear-gradient(
+    rgba(255,255,255,0.1),
+    rgba(0,0,0,0.1)
+  ),url('https://img.wallpapersafari.com/desktop/1280/1024/75/70/GLNith.jpg');
     background-repeat: no-repeat;
     opacity: 0.9;
     background-position: top;
