@@ -11,13 +11,13 @@
 .mainImg{
     background: linear-gradient(
     rgba(255,255,255,0.1),
-    rgba(0,0,0,0.1)
+    rgba(0,0,0,0)
   ),url('https://img.wallpapersafari.com/desktop/1280/1024/75/70/GLNith.jpg');
     background-repeat: no-repeat;
     opacity: 0.9;
     background-position: top;
     background-size: cover;
-    height: 60em;
+    height: 61.2em;
     width: 100%;
     @media(max-width: 600px){
        height: 20em;

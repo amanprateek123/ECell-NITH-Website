@@ -1,20 +1,30 @@
 
 .vision{
     display: flex;
+    width:80%;
     align-items: stretch;
     justify-content: space-around;
+    margin:2em auto;
     background-color: white;
+    @media(max-width: 600px){
+        flex-direction: column;
+    }
 }
 .pop{
     width: 30%;
     border: solid  #33d6ff 1px;
     cursor: pointer;
+    @media(max-width: 600px){
+       width: 100%;
+       margin: auto;
+       margin-top: 1em;
+    }
 }
 .pop:hover{
     background-color:rgba(0,0,0,0.8);
     color: white;
-transform-origin:left ;
-    transition: 2s ease-in-out;
+    transform-origin:left ;
+    transition: .2s ease-in-out;
 }
 
 .image{

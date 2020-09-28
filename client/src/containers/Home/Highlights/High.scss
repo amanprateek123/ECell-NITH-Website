@@ -1,0 +1,42 @@
+.high{
+    margin: 40px 0;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.highlight{
+    display: flex;
+    width:80%;
+    align-items: stretch;
+    justify-content: space-around;
+    margin:2em auto;
+    background-color: white;
+    @media(max-width: 600px){
+        flex-direction: column;
+    }
+}
+.back{
+    background-image: url("https://mycoach.co.za/wp-content/uploads/2018/09/businessman-with-entrepreneurship-hologram-concept-choose-creative-from-words_rxt5xkufe_thumbnail-full12.png");
+    background-position: center;
+    height: 18em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    @media(max-width: 600px){
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1em;
+        height: 12em;
+     }
+}
+.bg{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    display: none;
+    padding: 1em;
+    cursor: pointer;
+}
+.back:hover .bg{
+    display: block;
+}
