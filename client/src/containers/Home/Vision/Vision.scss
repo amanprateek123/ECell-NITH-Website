@@ -38,16 +38,27 @@ img{
     font-family: 'Epilogue', sans-serif;
     font-weight: 600;
     text-align: center;
+    @media(max-width: 600px){
+        font-size: 23px;
+    }
 }
 
 .note{
     font-family: 'Baloo Tammudu 2', cursive;
     text-align: center;
     margin: 20px;
+    @media(max-width: 600px){
+        font-size: 15px;
+    }
 }
 .welcome{
     margin: 40px;
     font-family: 'Epilogue', sans-serif;
     font-weight: 600;
     text-align: center;
+    @media(max-width: 600px){
+        font-size: 22px;
+        margin: 1em;
+        margin-bottom: -1em;
+    }
 }

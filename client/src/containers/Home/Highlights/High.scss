@@ -4,6 +4,9 @@
     font-weight: 600;
     text-align: center;
     text-transform: capitalize;
+    @media(max-width: 600px){
+        font-size: 30px;
+    }
 }
 .highlight{
     display: flex;
