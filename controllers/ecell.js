@@ -1,6 +1,7 @@
 const Gallery = require('../models/gallery')
 const Team = require('../models/team')
 const Init = require('../models/initiative')
+const GetInTouch = require('../models/getInTouch')
 
 //gallery
 exports.getGallery = async (req,res)=>{
@@ -32,5 +33,16 @@ exports.getEvent = async (req,res)=>{
     }
     catch(e){
         res.status(404).send({error:e.message})   
+    }
+}
+
+exports.getInTouch = async (req,res)=>{
+    const get = new GetInTouch(req.body)
+    try{
+        await get.save()
+        res.json({status:200,message:'The Message is Sent!'})
+    }
+    catch(e){
+        res.json({status:404,message:e.message})
     }
 }
