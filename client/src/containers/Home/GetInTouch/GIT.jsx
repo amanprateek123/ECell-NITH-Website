@@ -13,7 +13,7 @@ export default function GWS() {
             ...get,[e.target.name]:e.target.value
         })
     }
-     const [status,setStatus] = useState({})
+    const [status,setStatus] = useState({})
     const getIn = ()=>{
         return(
             fetch('/getInTouch',{
@@ -30,6 +30,7 @@ export default function GWS() {
         )
     }
     const [getInTouch,meta] = useMutation(getIn)
+
 
     return (
         <div className="get" >
