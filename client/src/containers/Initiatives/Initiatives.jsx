@@ -30,21 +30,24 @@ export default function Initiatives() {
        event.length? <div>
            <p className='heads'>Our Initiatives</p>
            <div className='containers container'>
-           <div className="b-1 box">
-             <div className="cont" style={{backgroundImage:`url(${hi(event[0])})`}} >
-                <div className="desc">
-                <p className="text" >{event[0].eventName}</p>
-                <span>
-                    {event[0].description}
-                </span>
-                </div>
-             </div>
+           <div className="b1 box">
+           <a href={`/events/${event[0]._id}`} style={{textDecoration:'none'}} >
+              <div  className="cont" style={{backgroundImage:`url(${hi(event[0])})`}} >
+                  <div className="eve" >
+                    <h2> {event[0].eventName} </h2>
+                  </div>
+               </div>
+              </a>
           </div>
           {event.slice(1).map(item=>(
               <div className="b2 box" key={item._id} >
-              <div style={{backgroundImage:`url(${hi(item)})`}} >
-               
+              <a href={`/events/${item._id}`} style={{textDecoration:'none'}} >
+              <div style={{backgroundImage:`url(${hi(item)})`}} className="conts" >
+                  <div className="eves" >
+                    <h2> {item.eventName} </h2>
+                  </div>
                </div>
+              </a>
            </div>
           ))}
           

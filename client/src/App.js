@@ -8,6 +8,7 @@ import E404 from './containers/E404/E404'
 import Gallery from './containers/Gallery/Gallery'
 import Team from './containers/Team/Team'
 import Initiatives from './containers/Initiatives/Initiatives';
+import Events from './containers/Events/Events';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/admin" component={Admin} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/team" component={Team} />
+        <Route path="/events/:id" component={Events} />
         <Route component={E404} />
       </Switch>
     </React.Fragment>
