@@ -1,0 +1,48 @@
+.foot{
+    display: flex;
+    justify-content: space-between;
+    height: 20em;
+    margin-top: 2em;    
+    .logo_foot{
+        background-image: url('https://ecellnith.org/images/ecell.png');
+        background-position: center;
+        background-size: contain;
+        width: 30%;
+        background-repeat: no-repeat;
+    }
+    .contact{
+        width: 40%;
+        margin-top: 1em;
+        h4{
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0.4em 0;
+            border-bottom: 3px solid rgba(135, 206, 235, 1);
+        }
+        .det{
+            margin: 1em;
+        }
+        .social{
+            display: flex;
+            div{
+                margin: 0 0.5em;
+                color: skyblue!important;
+                font-size: 35px!important;
+            }
+        }
+    }
+}
+.end{
+    display: flex;
+    padding: 1em 0 0 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(135, 206, 235, 0.3);
+    h4{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 13px;
+    }
+}

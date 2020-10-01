@@ -9,6 +9,7 @@ import Gallery from './containers/Gallery/Gallery'
 import Team from './containers/Team/Team'
 import Initiatives from './containers/Initiatives/Initiatives';
 import Events from './containers/Events/Events';
+import Footer from './containers/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/events/:id" component={Events} />
         <Route component={E404} />
       </Switch>
+      <Footer/>
     </React.Fragment>
   );
 }
