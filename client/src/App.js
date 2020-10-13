@@ -23,7 +23,6 @@ function App() {
         <Route path="/events/:id" component={Events} />
         <Route component={E404} />
       </Switch>
-      <Footer/>
     </React.Fragment>
   );
 }

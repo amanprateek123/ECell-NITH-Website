@@ -15,7 +15,7 @@ export default function Footer() {
                <div className="logo_foot" >
                     
                </div>
-               <div className="contact" >
+               <div className="contact" id="contact" >
                    <h4>Contact Us</h4>
                    <div className="det" > 
                        <MailIcon/><span> admin@ecellnith.org</span>

@@ -75,7 +75,7 @@ export default function ButtonAppBar() {
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Gallery" />
+           <a href="#contact" ><ListItemText primary="Gallery" /></a>
          </ListItem>
          <Divider/>
        </List>
