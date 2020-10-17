@@ -42,6 +42,10 @@ export default function ButtonAppBar() {
 
     setState({ ...state, [anchor]: open });
   };
+  
+  const hello = ()=>{
+    window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
+  }
 
   const draw = ()=>(
     <div
@@ -75,7 +79,7 @@ export default function ButtonAppBar() {
          </ListItem>
          <Divider/>
          <ListItem>
-           <a href="#contact" ><ListItemText primary="Gallery" /></a>
+          <ListItemText primary="Gallery" />
          </ListItem>
          <Divider/>
        </List>
@@ -115,7 +119,7 @@ export default function ButtonAppBar() {
              <Link style={{textDecoration:'none',color:'white'}} to="/gallery">Gallery</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/contact">Contact Us</Link>  
+             <Link style={{textDecoration:'none',color:'white'}} onClick={hello}>Contact Us</Link>  
           </Typography>
           </div>
         </Toolbar>
