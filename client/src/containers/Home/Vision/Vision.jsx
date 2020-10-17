@@ -6,7 +6,7 @@ export default function Home() {
             <h1 class="welcome">WELCOME TO ECELL-NITH</h1>
             <div class="vision">
 
-                <div class="pop slide">
+                <div class="pop slide" data-aos="flip-left" data-aos-duration="1500" >
                     <div class="image">
                         <img src="https://picsum.photos/200" alt="img" />
                     </div>
@@ -21,7 +21,7 @@ export default function Home() {
                         inventore, ullam iusto quis dignissimos eveniet maiores dicta molestias culpa autem maxime.
             </div>
                 </div>
-                <div class="pop slide">
+                <div class="pop slide" data-aos="flip-left" data-aos-duration="1500" >
                     <div class="image">
                         <img src="https://picsum.photos/200" alt="img" />
                     </div>
@@ -35,7 +35,7 @@ export default function Home() {
                         praesentium, natus accusamus ullam voluptates corporis!
             </div>
                 </div>
-                <div class="pop slide">
+                <div class="pop slide" data-aos="flip-left" data-aos-duration="1500" >
                     <div class="image">
                         <img src="https://picsum.photos/200" alt="img" />
                     </div>

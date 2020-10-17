@@ -6,7 +6,7 @@ export default function High() {
         <React.Fragment>
             <h1 className="high">Highlight Events</h1>
             <div className="highlight" >
-               <div className="back" >
+               <div className="back" data-aos="zoom-in" data-aos-duration="1500" >
                   <div className="bg" >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
@@ -14,7 +14,7 @@ export default function High() {
                         Perferendis, officiis? Eius of
                   </div>
                </div>
-               <div className="back">
+               <div className="back" data-aos="zoom-in" data-aos-duration="1500">
                <div className="bg" >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
@@ -22,7 +22,7 @@ export default function High() {
                         Perferendis, officiis? Eius of
                   </div>
                </div>
-               <div className="back">
+               <div className="back" data-aos="zoom-in" data-aos-duration="1500">
                <div className="bg" >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
