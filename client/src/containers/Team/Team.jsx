@@ -16,7 +16,7 @@ export default function Team() {
     console.log(team)
     return (
         <React.Fragment>
-        {team.length  ?  <div>
+        {team.length  ?  <div className="teams" >
             <div className="team_head" >
                 E-Cell Team
             </div>

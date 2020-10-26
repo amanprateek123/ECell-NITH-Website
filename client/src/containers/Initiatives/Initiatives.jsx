@@ -27,7 +27,7 @@ export default function Initiatives() {
    }
 
     return (
-       event.length? <div>
+       event.length? <div className="initi" >
            <p className='heads'>Our Initiatives</p>
            <div className='containers container'>
            <div className="b1 box">

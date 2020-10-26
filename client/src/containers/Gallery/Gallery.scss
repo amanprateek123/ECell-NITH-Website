@@ -1,3 +1,11 @@
+.gallery{
+    width: 100%;
+    position: absolute;
+    top: 4em;
+    @media(max-width: 600px){
+        top: 1em;
+    }
+}
 .containers{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
@@ -12,6 +20,10 @@
     margin: 0 0 0.5em 0;
     border-bottom:1px solid #ddd ;
     text-align: center;
+    @media(max-width: 600px){
+        margin: .5em;
+        font-size: 30px;
+    }
 }
 
 // .containers div{

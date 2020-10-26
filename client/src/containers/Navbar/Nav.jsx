@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     width:'100%',
     position:'fixed',
-    marginTop:'2em',
     zIndex:100
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color:'black'
   }
 }));
 
@@ -121,25 +121,25 @@ export default function ButtonAppBar() {
             <img src="https://ecellnith.org/images/ecell.png" />
             </div>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/">Home</Link>
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/">Home</Link>
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/initiatives">Initiatives</Link>  
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/initiatives">Initiatives</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/blog">Blogs</Link> 
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/blog">Blogs</Link> 
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/partner">Partners</Link> 
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/partner">Partners</Link> 
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/team">Teams</Link>  
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/team">Teams</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} to="/gallery">Gallery</Link>  
+             <Link style={{textDecoration:'none',color:'skyblue'}} to="/gallery">Gallery</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'white'}} onClick={hello}>Contact Us</Link>  
+             <Link style={{textDecoration:'none',color:'skyblue'}} onClick={hello}>Contact Us</Link>  
           </Typography>
           </div>
         </Toolbar>

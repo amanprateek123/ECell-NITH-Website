@@ -1,0 +1,8 @@
+.events{
+    width: 100%;
+    position: absolute;
+    top: 4em;
+    @media(max-width: 600px){
+        top: 1em;
+    }
+}

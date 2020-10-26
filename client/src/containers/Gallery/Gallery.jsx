@@ -24,7 +24,7 @@ export default function Galleries() {
       return url
    }
   return (
-    img.length?<div>
+    img.length?<div className="gallery" >
       <p className='head'> Gallery</p>
       <div className='containers container'>
         <div className="b-1 box">
