@@ -43,7 +43,7 @@
 
 .logo{
     position: absolute;
-    top: 0.5em;
+    padding: 1.5em;
     left: 2em;
     width: 10%;
     img{
@@ -85,11 +85,7 @@
 .title:hover{
     background-color: skyblue;
 }
-.main_text{
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    @media(max-width: 600px){
-        font-size: 1em!important;
-    }
+
+.black{
+    background-color: #333;
 }

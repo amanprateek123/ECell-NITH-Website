@@ -19,6 +19,10 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width:'100%',
+    position:'fixed',
+    marginTop:'2em',
+    zIndex:100
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -35,6 +39,18 @@ export default function ButtonAppBar() {
     right: false,
   });
 
+  const [cls,setCls] = React.useState('')
+  const listenScrollEvent = e => {
+    if (window.scrollY > 150) {
+      setCls("black")
+    } else {
+        setCls("")
+    }
+  }
+  React.useEffect(()=>{
+    window.addEventListener('scroll',listenScrollEvent)
+  },[])
+
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -43,8 +59,12 @@ export default function ButtonAppBar() {
     setState({ ...state, [anchor]: open });
   };
   
-  const hello = ()=>{
-    window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);
+  function hello() {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0, 
+      behavior: 'smooth',
+    });
   }
 
   const draw = ()=>(
@@ -87,7 +107,7 @@ export default function ButtonAppBar() {
   )
 
   return (
-    <div className={classes.root} className="mainImg" >
+    <div className={classes.root+" "+cls}>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} id="menu" onClick={toggleDrawer('left', true)}  color="inherit" aria-label="menu">
@@ -124,12 +144,7 @@ export default function ButtonAppBar() {
           </div>
         </Toolbar>
       </AppBar>
-      <div className="mainCont" >
-           <div className="container mx-auto" >
-             <p className="main_text" >NATIONAL INSTITUTE OF TECHNOLOGY, HAMIRPUR</p>
-              <Typography variant="h2" className="typo" >ENTREPRENEURSHIP CELL</Typography>
-           </div>
-      </div>
+     
     </div>
   );
 }

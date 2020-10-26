@@ -4,11 +4,12 @@ import Vision from './Vision/Vision'
 import Highlight from './Highlights/High'
 import GIT from './GetInTouch/GIT'
 import Footer from '../Footer/Footer'
+import Main from './Main/Main'
 
 export default function Home() {
     return (
         <div>
-          <Navbar/>
+          <Main/>
           <Vision/>
           <Highlight/>
           <GIT/>

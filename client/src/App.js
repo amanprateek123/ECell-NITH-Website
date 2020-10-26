@@ -14,6 +14,7 @@ import Footer from './containers/Footer/Footer';
 function App() {
   return (
     <React.Fragment>
+      <Navbar/>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/initiatives" component={Initiatives} />
