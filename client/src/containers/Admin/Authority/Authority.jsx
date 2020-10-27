@@ -16,7 +16,10 @@ export default function Authority() {
         return(
             fetch('/admin/auth',{
                 method:'POST',
-                body: JSON.stringify(auth)
+                body: JSON.stringify(auth),
+                headers: {
+                    'Content-Type': 'application/json'
+                  },
             }).then(res=>res.json()).then(res=>
                 setStatus(res)
             ).catch(err => {

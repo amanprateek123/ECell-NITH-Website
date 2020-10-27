@@ -1,6 +1,7 @@
 const Gallery = require('../models/gallery')
 const Team = require('../models/team')
 const Init = require('../models/initiative')
+const Auth = require('../models/authority')
 
 //gallery
 exports.postGallery = async (req,res)=>{
@@ -54,4 +55,23 @@ exports.postEvent = async (req,res)=>{
         res.json({error:e.message,status:404})
          console.log(e)
     }
+}
+
+exports.postAuth = async (req,res)=>{
+    let data = req.body
+    let auth = new Auth()
+    auth.name = data.name
+    auth.designation = data.designation
+    auth.image = data.imageLink
+    auth.description = data.description
+    try{
+        await auth.save()
+        res.json({msg:'Details upload successfully',status:200})
+        console.log('Success!')
+    }
+    catch(e){
+        res.json({error:e.message,status:404})
+        console.log(e)
+    }
+
 }
