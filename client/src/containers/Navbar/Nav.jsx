@@ -139,7 +139,7 @@ export default function ButtonAppBar() {
              <Link style={{textDecoration:'none',color:'skyblue'}} to="/gallery">Gallery</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} onClick={hello}>Contact Us</Link>  
+             <Link style={{textDecoration:'none',color:'skyblue'}} onClick={hello} to="/">Contact Us</Link>  
           </Typography>
           </div>
         </Toolbar>
