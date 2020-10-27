@@ -2,6 +2,7 @@ const Gallery = require('../models/gallery')
 const Team = require('../models/team')
 const Init = require('../models/initiative')
 const GetInTouch = require('../models/getInTouch')
+const Auth = require('../models/authority')
 
 //gallery
 exports.getGallery = async (req,res)=>{
@@ -44,5 +45,15 @@ exports.getInTouch = async (req,res)=>{
     }
     catch(e){
         res.json({status:404,message:e.message})
+    }
+}
+
+exports.getAuth = async (req,res)=>{
+    try{
+       const auth = await Auth.find({})
+       res.json(auth)
+    }
+    catch(e){
+       res.status(404).send({error:e.message})  
     }
 }
