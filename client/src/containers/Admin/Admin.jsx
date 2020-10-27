@@ -14,14 +14,15 @@ import Team from './Team/Team'
 import Initiatives from './Initiative/Initiative'
 
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import Authority from './Authority/Authority';
 
 export default function Admin(props) {
 
-    const [tab, setTab] = useState('gallery');
+    const [tab, setTab] = useState('auth');
 
 
     return (
-        <div className="container-fluid page admin" style={{backgroundColor:'#f3f3f3'}} >
+        <div className="container-fluid page admin pt-3" style={{backgroundColor:'#f3f3f3'}} >
         <div className="container main-container pt-5">
             <div className="row">
                 <div className="col-md-4">
@@ -73,6 +74,12 @@ export default function Admin(props) {
                                             </ListItemIcon>
                                             <ListItemText id="tab" primary="Initiatives" />
                                         </ListItem>
+                                        <ListItem button selected={tab == 'auth'} onClick={() => setTab('auth')}>
+                                        <ListItemIcon>
+                                            <FileIcon />
+                                        </ListItemIcon>
+                                        <ListItemText id="tab" primary="Authority" />
+                                    </ListItem>
 
                                     </List>
 
@@ -110,7 +117,9 @@ export default function Admin(props) {
                             : tab == 'gallery' ?
                                <Gallery/>:
                                tab==='init'?
-                               <Initiatives/> : null}
+                               <Initiatives/> :
+                               tab==='auth'?
+                               <Authority/>: null}
                     </div>
                 </div>
             </div>
