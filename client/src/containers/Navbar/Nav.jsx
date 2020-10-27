@@ -14,7 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import './Nav.scss'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -79,27 +79,27 @@ export default function ButtonAppBar() {
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Home" />
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/" ><ListItemText primary="Home" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Initiatives" />
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/initiatives" ><ListItemText primary="Initiatives" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Partners" />
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/" ><ListItemText primary="Partners" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Blogs" />
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/blogs" ><ListItemText primary="Blogs" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
-           <ListItemText primary="Teams" />
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/team" ><ListItemText primary="Teams" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
-          <ListItemText primary="Gallery" />
+          <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/gallery" ><ListItemText primary="Gallery" /></NavLink>
          </ListItem>
          <Divider/>
        </List>
