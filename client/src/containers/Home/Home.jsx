@@ -1,10 +1,9 @@
 import React from 'react'
-import Navbar from '../Navbar/Nav'
-import Vision from './Vision/Vision'
-import Highlight from './Highlights/High'
-import GIT from './GetInTouch/GIT'
+import Vision from '../../components/Home/Vision/Vision'
+import Highlight from '../../components/Home/Highlights/High'
+import GIT from '../../components/Home/GetInTouch/GIT'
 import Footer from '../Footer/Footer'
-import Main from './Main/Main'
+import Main from '../../components/Home/Main/Main'
 
 export default function Home() {
     return (
