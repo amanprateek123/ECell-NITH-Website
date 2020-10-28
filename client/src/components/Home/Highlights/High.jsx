@@ -11,26 +11,29 @@ export default function High() {
             <div className="highlight" >
                <div className="back" style={{backgroundImage:`url(${img})`}}  data-aos="zoom-in" data-aos-duration="1500" >
                   <div className="bg" >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
+                     <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
                         dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of
+                        Perferendis, officiis? Eius of</p>
                   </div>
                </div>
                <div className="back" style={{backgroundImage:`url(${img1})`}} data-aos="zoom-in" data-aos-duration="1500">
                <div className="bg" >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
+                     <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
                         dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of
+                        Perferendis, officiis? Eius of</p>
                   </div>
                </div>
                <div className="back" style={{backgroundImage:`url(${img2})`}} data-aos="zoom-in" data-aos-duration="1500">
                <div className="bg" >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
+                     <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
                         aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
                         dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of
+                        Perferendis, officiis? Eius of</p>
                   </div>
                </div>
             </div>
