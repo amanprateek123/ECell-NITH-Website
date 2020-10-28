@@ -2,13 +2,12 @@
     width: 270px;
     height: 350px;
     margin: auto;
-    background-color: rgba(135, 206, 235,0.3);
+    background-color: rgba(0,0,0,0.9);
     padding:1em;
     border-radius: 20px;
     border: 1px solid grey;
 }
 .container1:hover{
-    background-color: rgba(135, 206, 235,0.3);
     transform: scale(1.03);
     transition: 1s ease;
 }
@@ -24,7 +23,7 @@ margin:0 auto ;
 .pics{
     background-image: url("https://picsum.photos/200");
     width: 100%;
-    border-radius: 15px 60px 15px 60px;
+    border-radius: 20px;
     height: 75%;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,22 +48,22 @@ margin:0 auto ;
 .name{
     margin: 1em 0 0.5em 0;
     text-align: center;
-    color:black;
+    color:white;
     font-size: 18px;
 }
 .post{
     margin: 0.5em 0;
     text-align: center;
-    color:black;
+    color:skyblue;
     font-weight: bold;
     font-size: 16px; 
 }
-.container1:hover .name{
+/* .container1:hover .name{
     color: black;
 }
 .container1:hover .post{
     color: black;
-}
+} */
 .email{
     color: blue;
     font-size: 14px;
