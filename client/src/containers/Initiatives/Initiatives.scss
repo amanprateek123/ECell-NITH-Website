@@ -9,10 +9,11 @@
 
 .containers{
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr; 
     grid-gap: 1em;
     grid-auto-rows: minmax(400px,auto);
-    margin: 3em;
+    margin: 3em auto;
+    width: 80%;
 }
 .heads{
     font-size: 45px;

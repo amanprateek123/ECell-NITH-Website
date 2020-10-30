@@ -5,6 +5,7 @@ import GIT from '../../components/Home/GetInTouch/GIT'
 import Footer from '../Footer/Footer'
 import Main from '../../components/Home/Main/Main'
 import Authority from '../../components/Home/Authority/Authority'
+import Gallery from '../../components/Home/Gallery/Gallery'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
           <Vision/>
           <Highlight/>
           <Authority/>
+          <Gallery/>
           <GIT/>
           <Footer/>
         </div>
