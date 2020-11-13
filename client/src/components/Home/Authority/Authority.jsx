@@ -20,7 +20,7 @@ export default function Authority() {
                 <div>
                 <h4>{auth[0].name}</h4>
                 <p style={{color:'skyblue',fontWeight:'bold'}} >{auth[0].designation}</p>
-                <p>{auth[0].description}</p>
+                <p className="para" >{auth[0].description}</p>
                 </div>
             </div>
             <div className="div" data-aos="flip-left" data-aos-duration="1500" >
@@ -28,7 +28,7 @@ export default function Authority() {
                 <div>
                 <h4>{auth[1].name}</h4>
                 <p style={{color:'skyblue',fontWeight:'bold'}} >{auth[1].designation}</p>
-                <p>{auth[1].description}</p>
+                <p className="para">{auth[1].description}</p>
                 </div>
             </div>
         </div>

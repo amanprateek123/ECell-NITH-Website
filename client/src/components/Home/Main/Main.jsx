@@ -6,7 +6,7 @@ import { Button } from '@material-ui/core';
 export default function Main() {
     function hello() {
         window.scroll({
-          top: document.body.offsetHeight/2.5,
+          top: document.body.offsetHeight/4.5,
           left: 0, 
           behavior: 'smooth',
         });
