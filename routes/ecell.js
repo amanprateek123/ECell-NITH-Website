@@ -6,6 +6,7 @@ const router = new express.Router()
 router.get('/gallery',ctrl.getGallery)
 router.get('/team',ctrl.getTeam)
 router.get('/initiative',ctrl.getEvent)
+router.get('/initiatives',ctrl.getEventInd)
 router.get('/auth',ctrl.getAuth)
 router.post('/getInTouch',ctrl.getInTouch)
 

@@ -36,6 +36,15 @@ exports.getEvent = async (req,res)=>{
         res.status(404).send({error:e.message})   
     }
 }
+exports.getEventInd = async (req,res)=>{
+    try{
+        const event = await Init.find({_id:req.query.id})
+        res.json(event)
+    }
+    catch(e){
+        res.status(404).send({error:e.message})   
+    }
+}
 
 exports.getInTouch = async (req,res)=>{
     const get = new GetInTouch(req.body)
