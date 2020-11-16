@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color:'black'
+    color:'skyblue'
   }
 }));
 
@@ -87,7 +87,7 @@ export default function ButtonAppBar() {
          </ListItem>
          <Divider/>
          <ListItem>
-           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/" ><ListItemText primary="Partners" /></NavLink>
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/partner" ><ListItemText primary="Partners" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>
@@ -113,7 +113,7 @@ export default function ButtonAppBar() {
           <IconButton edge="start" className={classes.menuButton} id="menu" onClick={toggleDrawer('left', true)}  color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Drawer anchor='left' open={state['left']}>
+          <Drawer anchor='left' open={state['left']} onClick={toggleDrawer('left', false)} >
             {draw()}
           </Drawer>
           <div className="nav_bar" >

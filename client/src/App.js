@@ -10,6 +10,7 @@ import Team from './containers/Team/Team'
 import Initiatives from './containers/Initiatives/Initiatives';
 import Events from './containers/Events/Events';
 import Footer from './containers/Footer/Footer';
+import Partners from './containers/Partners/Partners';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/admin" component={Admin} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/team" component={Team} />
+        <Route path="/partner" component={Partners} />
         <Route path="/events/:id" component={Events} />
         <Route component={E404} />
       </Switch>
