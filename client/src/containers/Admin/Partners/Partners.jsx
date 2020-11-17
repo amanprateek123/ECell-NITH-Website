@@ -10,10 +10,27 @@ export default function Partners() {
         setPart({...part,[e.target.name]:e.target.value})
     }
     const [status,setStatus] = useState({})
+
+    const postPartner = ()=>{
+        return(
+            fetch('/admin/partner',{
+                method:'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                  },
+                body: JSON.stringify(part),
+            }).then(res=>res.json()).then(res=>
+                setStatus(res)
+            ).catch(err => {
+                console.log(err);
+            })
+        )
+   }
+   const [partner,meta] = useMutation(postPartner)
     return (
         <Paper>
              <h3 className="p-2" style={{textAlign:'center'}}>Initiatives</h3>
-             <form encType="multipart/form-data" onSubmit={(e)=>{e.preventDefault();}} >
+             <form encType="multipart/form-data" onSubmit={(e)=>{e.preventDefault();partner()}} >
              <div className="frm">
                 <label>Image URL<span style={{color:'red'}} >*</span></label>
                 <input type="text" name="imageURL" required onChange={handler} />

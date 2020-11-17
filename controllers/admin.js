@@ -2,6 +2,7 @@ const Gallery = require('../models/gallery')
 const Team = require('../models/team')
 const Init = require('../models/initiative')
 const Auth = require('../models/authority')
+const Partner = require('../models/partner')
 
 //gallery
 exports.postGallery = async (req,res)=>{
@@ -74,4 +75,18 @@ exports.postAuth = async (req,res)=>{
         console.log(e)
     }
 
+}
+
+exports.postPartner = async (req,res)=>{
+    let data = req.body
+    const part = new Partner(data)
+    try{
+        await part.save()
+        res.json({msg:'Details upload successfully',status:200})
+        console.log('Success!')
+    }
+    catch(e){
+        res.json({error:e.message,status:404})
+        console.log(e)
+    }
 }
