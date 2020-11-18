@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
 
   const [cls,setCls] = React.useState('')
   const listenScrollEvent = e => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 50) {
       setCls("black")
     } else {
         setCls("")

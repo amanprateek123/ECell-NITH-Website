@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns:1fr 1fr 1fr; 
     grid-gap: 1em;
-    grid-auto-rows: minmax(400px,auto);
+    grid-auto-rows: minmax(300px,auto);
     margin: 3em auto;
     width: 80%;
 }
