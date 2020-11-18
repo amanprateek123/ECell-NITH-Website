@@ -6,6 +6,18 @@ const teamSchema  = new mongoose.Schema({
         type:String,
         required:true
     },
+    sub:{
+        type:String,
+        required:true
+    },
+    sponsor:{
+        type:String,
+        required:true
+    },
+    date:{
+        type:String,
+        required:true
+    },
     description:{
         type:String,
         required:true

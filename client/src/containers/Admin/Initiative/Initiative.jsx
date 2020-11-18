@@ -5,7 +5,7 @@ import { useState } from 'react'
 import '../Team/Team.scss';
 
 export default function Team() {
-    let schema = {name:'',description:''}
+    let schema = {name:'',sub:'',sponsor:'',date:'',description:''}
     const [init,setInit] = useState(schema)
     const handler = (e)=>{
         setInit({...init,[e.target.name]:e.target.value})
@@ -38,6 +38,18 @@ export default function Team() {
              <div className="frm">
                 <label>Event Name<span style={{color:'red'}} >*</span></label>
                 <input type="text" name="name" required onChange={handler} />
+             </div>
+             <div className="frm">
+                <label>Sub-title<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="sub" required onChange={handler} />
+             </div>
+             <div className="frm">
+                <label>Sponsors<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="sponsor" required onChange={handler} />
+             </div>
+             <div className="frm">
+                <label>Date<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="date" required onChange={handler} />
              </div>
              <div className="frm">
                 <label>Description<span style={{color:'red'}} >*</span></label>

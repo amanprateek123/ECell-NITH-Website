@@ -45,6 +45,9 @@ exports.postEvent = async (req,res)=>{
     let img = req.file.buffer
     let init = new Init()
     init.eventName = data.name
+    init.sub = data.sub
+    init.sponsor = data.sponsor
+    init.date = data.date
     init.description = data.description
     init.image = img
     try{
