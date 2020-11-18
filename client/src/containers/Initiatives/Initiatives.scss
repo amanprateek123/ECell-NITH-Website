@@ -79,7 +79,7 @@
     background-color: rgba(0,0,0,0.6);
     color: white;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: 2000ms ease;
     cursor: pointer;
     h2{
@@ -97,7 +97,7 @@
     background-color: rgba(0,0,0,0.6);
     color: white;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: 1000ms ease;
     cursor: pointer;
     display: flex;
@@ -111,10 +111,10 @@
     }
 }
 
-.cont:hover .eve {
-    opacity: 1;
- }
+// .cont:hover .eve {
+//     opacity: 1;
+//  }
 
- .conts:hover .eves{
-     opacity: 1;
- }
+//  .conts:hover .eves{
+//      opacity: 1;
+//  }

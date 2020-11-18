@@ -74,8 +74,9 @@ export default function ButtonAppBar() {
     >
        <List>
        <ListItem>
-           <ListItemIcon style={{display:'flex',justifyContent:'flex-end',width:'100%',height:'2em',alignItems:'center'}} >
-             <ChevronLeftIcon onClick={toggleDrawer('left', false)} fontSize="inherit" style={{fontSize:'35px',cursor:'pointer',fontWeight:'bold',color:'black'}}  /></ListItemIcon>
+           <ListItemIcon style={{display:'flex',justifyContent:'center',width:'100%',height:'2em',alignItems:'center'}} >              
+             <img src="https://ecellnith.org/images/ecell.png" style={{width:'60%'}} /> 
+           </ListItemIcon>
          </ListItem>
          <Divider/>
          <ListItem>
