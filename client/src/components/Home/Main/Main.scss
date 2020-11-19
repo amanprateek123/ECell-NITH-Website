@@ -4,12 +4,12 @@
     align-items: center;
     width: 100%;
     margin-top: 0em;
-    height: auto;
+    height: 100%;
     @media(max-width: 600px){
      margin-top: 0em ;
     }
 }
-.mainImg{
+.mainImgs{
     background: linear-gradient(
     rgba(255,255,255,0.1),
     rgba(0,0,0,0)
@@ -18,7 +18,7 @@
     opacity: 0.9;
     background-position: top;
     background-size: cover;
-    height: 63.5em;
+    height: 53.5em;
     width: 100%;
     @media(max-width: 600px){
        height: 48em;

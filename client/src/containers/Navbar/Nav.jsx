@@ -15,6 +15,10 @@ import Drawer from '@material-ui/core/Drawer';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import './Nav.scss'
 import { Link, NavLink } from 'react-router-dom';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,6 +107,12 @@ export default function ButtonAppBar() {
           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/gallery" ><ListItemText primary="Gallery" /></NavLink>
          </ListItem>
          <Divider/>
+         <ListItem className="social_media" >
+             <div><FacebookIcon fontSize="inherit" /></div> 
+             <div><InstagramIcon fontSize="inherit" /></div>
+             <div><LinkedInIcon fontSize="inherit" /></div> 
+             <div><TwitterIcon fontSize="inherit" /></div> 
+         </ListItem>
        </List>
     </div>
   )
