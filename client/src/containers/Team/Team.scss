@@ -2,7 +2,7 @@
     text-align: center;
     padding: 0.5em 0;
     margin: 0 0 0.5em 0;
-    font-size: 45px;
+    font-size: 35px;
     border-bottom:1px solid #ddd ;
 }
 .team{
@@ -18,4 +18,33 @@
     @media(max-width: 600px){
         top: 1em;
     }
+}
+
+//alumni
+
+.alumni{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    .year{
+       width: 17.5%; 
+       display: flex;
+       flex-direction: column;
+       border-right: 1px solid grey;
+       div{
+          width: 100%;
+          padding: .75em 1em;
+          text-align: center;
+          cursor: pointer;
+          font-weight: bold;
+       }
+    }
+    .list{
+        width: 83%;
+    }
+}
+
+.tab{
+    border-right: 3px solid skyblue;
+    color: skyblue;
 }
