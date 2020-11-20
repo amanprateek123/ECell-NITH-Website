@@ -19,7 +19,7 @@ export default function Team() {
     console.log(team)
     return (
         <React.Fragment>
-        {team.length  ?  <div className="teams" >
+        <div className="teams" >
             <div className="team_head" >
                 E-Cell Team
             </div>
@@ -44,9 +44,11 @@ export default function Team() {
                       1999-2000
                    </div>
                </div>
-               <div className="list">
+              {team.length>0? <div className="list">
                    
-               </div>
+               </div>:<div className="spin">
+               <CircularProgress/>
+             </div>}
                 
             </div>
             {/*<div className="m-2" style={{height:'2em'}} >
@@ -62,9 +64,7 @@ export default function Team() {
                 }
 
             </div>*/}
-            </div>:<div className="spin">
-                <CircularProgress/>
-              </div>}
+            </div>
         </React.Fragment>
     )
 }

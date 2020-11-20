@@ -5,12 +5,13 @@ import { useState } from 'react'
 import './Team.scss'
 
 export default function Team() {
-    let schema = {name:'',phone:'',email:'',post:'',linkedIn:''}
+    let schema = {name:'',phone:'',email:'',post:'',linkedIn:'',startYear:'',endYear:''}
     const [team,setTeam] = useState(schema)
     const handler = (e)=>{
         setTeam({...team,[e.target.name]:e.target.value})
     }
     const [status,setStatus] = useState({})
+    console.log(team)
 
    const postTeam = ()=>{
         const pic = document.getElementById('image').files
@@ -46,6 +47,14 @@ export default function Team() {
              <div className="frm">
                 <label>Phone No.<span style={{color:'red'}} >*</span></label>
                 <input type="text" name="phone" required onChange={handler} />
+             </div>
+             <div className="frm">
+                <label>Start Year.<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="startYear" required onChange={handler} />
+             </div>
+             <div className="frm">
+                <label>End Year<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="endYear" required onChange={handler} />
              </div>
              <div className="frm">
                 <label>Post<span style={{color:'red'}} >*</span></label>

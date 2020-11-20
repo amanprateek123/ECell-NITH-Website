@@ -9,6 +9,12 @@ const teamSchema  = new mongoose.Schema({
         type:Number,
         maxlength:10
     },
+    startYear:{
+        type:Number,
+    },
+    endYear:{
+        type:Number,
+    },
     email:{
         type:String,
         trim:true,
