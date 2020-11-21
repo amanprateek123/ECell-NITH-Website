@@ -41,10 +41,21 @@
     }
     .list{
         width: 83%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .tab{
     border-right: 3px solid skyblue;
     color: skyblue;
+}
+.no_info{
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 20px;
+    }
 }

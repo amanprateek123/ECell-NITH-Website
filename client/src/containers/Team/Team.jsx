@@ -9,6 +9,8 @@ import {NavLink} from 'react-router-dom'
 export default function Team() {
     const [team,setTeam] = useState([])
     const [tab,setTab] = useState(0)
+    const [array,setArray] = useState([])
+    const [year,setYear] = useState(new Date().getFullYear())
 
 
     useEffect(()=>{
@@ -16,7 +18,18 @@ export default function Team() {
             setTeam(res)
           })
     },[])
-    console.log(team)
+
+    const filterTeam = (year)=>{
+       let arr = team.filter(itm => itm.year===year);
+       return arr;
+    }
+
+    const handler = (k,y)=>{
+        setTab(k)
+        setArray(filterTeam(y))
+    }
+    console.log('a',array)
+
     return (
         <React.Fragment>
         <div className="teams" >
@@ -25,28 +38,27 @@ export default function Team() {
             </div>
             <div className="alumni" >
                <div className="year" >
-                   <div onClick={()=>setTab(0)} className={tab===0?"tab":""} >
+                   <div onClick={()=>handler(0,"2020")} className={tab===0?"tab":""} >
                       Current Year
                    </div>
-                   <div onClick={()=>setTab(1)} className={tab===1?"tab":""} >
-                      1999-2000
+                   <div onClick={()=>handler(1,"2019")} className={tab===1?"tab":""} >
+                      2019-2020
                    </div>
-                   <div onClick={()=>setTab(2)} className={tab===2?"tab":""} >
-                      1999-2000
+                   <div onClick={()=>handler(2,"2018")} className={tab===2?"tab":""} >
+                      2018-2019
                    </div>
-                   <div onClick={()=>setTab(3)} className={tab===3?"tab":""} >
-                      1999-2000
-                   </div>
-                   <div onClick={()=>setTab(4)} className={tab===4?"tab":""} >
-                      1999-2000
-                   </div>
-                   <div onClick={()=>setTab(5)} className={tab===5?"tab":""} >
-                      1999-2000
+                   <div onClick={()=>handler(3,"2017")} className={tab===3?"tab":""} >
+                      2017-2018
                    </div>
                </div>
-              {team.length>0? <div className="list">
-                   
-               </div>:<div className="spin">
+              {team.length>0?(
+                  array.length>0?
+                  <div className="list">
+                   {array.map(item=>(
+                       <Members team={item} />
+                   ))}
+               </div>:<div className="no_info" ><h1>No information available</h1></div>
+              ) :<div className="spin">
                <CircularProgress/>
              </div>}
                 

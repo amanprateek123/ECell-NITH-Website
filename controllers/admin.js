@@ -27,8 +27,7 @@ exports.postTeam = async (req,res)=>{
      teams.name = data.name
      teams.email = data.email
      teams.phone = data.phone
-     teams.startYear = data.startYear
-     teams.endYear = data.endYear
+     teams.year = data.year
      teams.post = data.post
      teams.LinkedinId = data.linkedIn
      teams.image = img

@@ -5,7 +5,7 @@ import { useState } from 'react'
 import './Team.scss'
 
 export default function Team() {
-    let schema = {name:'',phone:'',email:'',post:'',linkedIn:'',startYear:'',endYear:''}
+    let schema = {name:'',phone:'',email:'',post:'',linkedIn:'',year:''}
     const [team,setTeam] = useState(schema)
     const handler = (e)=>{
         setTeam({...team,[e.target.name]:e.target.value})
@@ -49,12 +49,8 @@ export default function Team() {
                 <input type="text" name="phone" required onChange={handler} />
              </div>
              <div className="frm">
-                <label>Start Year.<span style={{color:'red'}} >*</span></label>
-                <input type="text" name="startYear" required onChange={handler} />
-             </div>
-             <div className="frm">
-                <label>End Year<span style={{color:'red'}} >*</span></label>
-                <input type="text" name="endYear" required onChange={handler} />
+                <label>Year<span style={{color:'red'}} >*</span></label>
+                <input type="text" name="year" required onChange={handler} />
              </div>
              <div className="frm">
                 <label>Post<span style={{color:'red'}} >*</span></label>
