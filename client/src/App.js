@@ -11,6 +11,7 @@ import Initiatives from './containers/Initiatives/Initiatives';
 import Events from './containers/Events/Events';
 import Footer from './containers/Footer/Footer';
 import Partners from './containers/Partners/Partners';
+import Blogs from './containers/Blogs/Blogs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/gallery" component={Gallery} />
         <Route path="/team" component={Team} />
         <Route path="/partner" component={Partners} />
+        <Route path="/blog" component={Blogs} />
         <Route path="/events/:id" component={Events} />
         <Route component={E404} />
       </Switch>
