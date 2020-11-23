@@ -26,29 +26,49 @@
     display: flex;
     width: 100%;
     margin: 0 auto;
+    @media(max-width:600px){
+        flex-direction: column;
+    }
     .year{
        width: 17.5%; 
        display: flex;
        flex-direction: column;
        border-right: 1px solid grey;
+       @media(max-width:600px){
+           width: 100%;
+           flex-direction: row;
+           margin-bottom: 1em;
+           border: none;
+       }
        div{
           width: 100%;
           padding: .75em 1em;
           text-align: center;
           cursor: pointer;
           font-weight: bold;
+          @media(max-width:600px){
+              padding: .5em 0;
+          }
        }
     }
     .list{
         width: 83%;
         display: grid;
         grid-template-columns: auto auto auto;
+        @media(max-width:600px){
+            grid-template-columns: auto;
+            width: 100%;
+        }
     }
 }
 
 .tab{
     border-right: 3px solid skyblue;
     color: skyblue;
+    @media(max-width:600px){
+        border-bottom: 3px solid skyblue;
+        border-right: none;
+    }
 }
 .no_info{
     width: 83%;
@@ -57,5 +77,9 @@
     align-items: center;
     h1{
         font-size: 20px;
+    }
+    @media(max-width:600px){
+        width: 100%;
+        margin-top: 4em;
     }
 }
