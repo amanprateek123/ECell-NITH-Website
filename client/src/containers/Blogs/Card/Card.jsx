@@ -6,6 +6,14 @@ export default function Card() {
     const para = "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
     const [len,setLen] = useState(150)
     let red = para.slice(0,len)
+    const change = ()=>{
+        if(len===150){
+            setLen(para.length)
+        }
+        else{
+            setLen(150)
+        }
+    }
     return (
         <div className="cards" >
             <h4>Title</h4>
@@ -16,7 +24,7 @@ export default function Card() {
             <h6> Sub-Title </h6>
             <p> {red} </p>
             <div className="btns" >
-              <Button variant="contained" color="inherit" onClick={()=>setLen(para.length)} > Read More </Button>
+              <Button variant="contained" color="inherit" onClick={change} > {len===150?"Read More":"Show Less"} </Button>
             </div>
             </div>
         </div>
