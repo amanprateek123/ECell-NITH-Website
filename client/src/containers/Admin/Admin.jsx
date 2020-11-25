@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import {
     Card, CardContent, Avatar,
@@ -20,12 +20,32 @@ import Blogs from './Blogs/Blogs';
 
 export default function Admin(props) {
 
-    const [tab, setTab] = useState('auth');
+    const [tab, setTab] = useState('init');
+    const [page,setPage] = useState(1)
+    const [value,setValue] = useState('')
+    const handle = (e)=>{
+        setValue(e.target.value)
+    }
+    const condition =()=>{
+        if(value==='Aman123@'){
+            setPage(2)
+        }
+        else{
+            setPage(3)
+        }
+    }
 
 
     return (
         <div className="container-fluid page admin pt-3" style={{backgroundColor:'#f3f3f3'}} >
-        <div className="container main-container pt-5">
+            {page===1?
+            <div style={{display:'flex',height:'30em',justifyContent:'center',alignItems:'center'}} >  
+               <form onSubmit={(e)=>{e.preventDefault();condition()}}> 
+                <h6> Enter Password: </h6>
+                <input type="text" style={{width:'15em'}} onChange={handle} placeholder="Enter Password" /> 
+               </form>
+            </div>: page===2?
+            <div className="container main-container pt-5">
             <div className="row">
                 <div className="col-md-4">
                     <div className="side-nav">
@@ -138,7 +158,7 @@ export default function Admin(props) {
                     </div>
                 </div>
             </div>
+        </div>:<div style={{color:'red',display:'flex',justifyContent:'center',alignItems:'center',height:'30em'}} ><p>  Sorry, Wrong Password <span style={{color:'skyblue',cursor:'pointer'}} onClick={()=>setPage(1)} >Try Again</span>  </p></div>}
         </div>
-    </div>
     )
 }
