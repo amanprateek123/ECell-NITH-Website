@@ -16,6 +16,7 @@ import Initiatives from './Initiative/Initiative'
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Authority from './Authority/Authority';
 import Partners from './Partners/Partners';
+import Blogs from './Blogs/Blogs';
 
 export default function Admin(props) {
 
@@ -62,7 +63,12 @@ export default function Admin(props) {
                                             </ListItemIcon>
                                             <ListItemText id="tab" primary="Gallery" />
                                         </ListItem>
-
+                                        <ListItem button selected={tab == 'blogs'} onClick={() => setTab('blogs')}>
+                                            <ListItemIcon>
+                                                <FileIcon />
+                                            </ListItemIcon>
+                                            <ListItemText id="tab" primary="Blogs" />
+                                        </ListItem>
                                         <ListItem button selected={tab == 'teams'} onClick={() => setTab('teams')}>
                                             <ListItemIcon>
                                                 <FileIcon />
@@ -127,7 +133,8 @@ export default function Admin(props) {
                                <Initiatives/> :
                                tab==='auth'?
                                <Authority/>:
-                               tab==='partner'?<Partners/>: null}
+                               tab==='partner'?<Partners/>:
+                               tab==='blogs'?<Blogs/>: null}
                     </div>
                 </div>
             </div>

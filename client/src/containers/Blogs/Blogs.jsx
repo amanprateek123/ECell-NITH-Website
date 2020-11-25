@@ -6,7 +6,7 @@ export default function Blogs() {
     return (
         <div className="blogs" >
           <p className='head2'>Blogs</p>
-          <div className="list_blog" >
+          <div className="list_blog">
                <Card/>
                <Card/>
                <Card/>
