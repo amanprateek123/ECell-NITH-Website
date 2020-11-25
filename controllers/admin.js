@@ -3,6 +3,7 @@ const Team = require('../models/team')
 const Init = require('../models/initiative')
 const Auth = require('../models/authority')
 const Partner = require('../models/partner')
+const Blog = require('../models/blogs')
 
 //gallery
 exports.postGallery = async (req,res)=>{
@@ -86,6 +87,24 @@ exports.postPartner = async (req,res)=>{
     const part = new Partner(data)
     try{
         await part.save()
+        res.json({msg:'Details upload successfully',status:200})
+        console.log('Success!')
+    }
+    catch(e){
+        res.json({error:e.message,status:404})
+        console.log(e)
+    }
+}
+
+exports.postBlog = async (req,res) =>{
+    let data = req.body
+    let blog = new Blog ()
+    blog.title = data.title
+    blog.sub = data.sub
+    blog.image = data.imageLink
+    blog.description = data.description
+    try{
+        await blog.save()
         res.json({msg:'Details upload successfully',status:200})
         console.log('Success!')
     }
