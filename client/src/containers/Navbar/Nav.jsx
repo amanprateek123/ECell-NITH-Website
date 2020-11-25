@@ -96,7 +96,7 @@ export default function ButtonAppBar() {
          </ListItem>
          <Divider/>
          <ListItem>
-           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/blogs" ><ListItemText primary="Blogs" /></NavLink>
+           <NavLink onClick={toggleDrawer('left', false)} style={{textDecoration:'none',color:'black'}} to="/blog" ><ListItemText primary="Blogs" /></NavLink>
          </ListItem>
          <Divider/>
          <ListItem>

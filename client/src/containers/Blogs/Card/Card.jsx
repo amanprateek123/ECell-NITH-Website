@@ -2,29 +2,30 @@ import React, { useState } from 'react'
 import {Button} from '@material-ui/core'
 import './Card.scss'
 
-export default function Card() {
-    const para = "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-    const [len,setLen] = useState(150)
+export default function Card(props) {
+    let para = props.data.description
+    const [len,setLen] = useState(200)
     let red = para.slice(0,len)
     const change = ()=>{
-        if(len===150){
+        if(len===200){
             setLen(para.length)
         }
         else{
-            setLen(150)
+            setLen(200)
         }
     }
+    console.log(props)
     return (
         <div className="cards" >
-            <h4>Title</h4>
+            <h4>{props.data.title}</h4>
             <div className="imgs" >
-               <img src="https://bmmagazine.co.uk/wp-content/uploads/2017/01/blogging-e1484908296381.jpg"/>
+               <img src={props.data.image}/>
             </div>
             <div>
-            <h6> Sub-Title </h6>
+            <h6> {props.data.sub} </h6>
             <p> {red} </p>
             <div className="btns" >
-              <Button variant="contained" color="inherit" onClick={change} > {len===150?"Read More":"Show Less"} </Button>
+              <Button variant="contained" color="inherit" onClick={change} > {len===200?"Read More":"Show Less"} </Button>
             </div>
             </div>
         </div>

@@ -22,5 +22,6 @@
     grid-gap: 1em;
     @media(max-width: 600px){
         grid-template-columns: auto;
+        margin: 1em auto;
     }
 }
