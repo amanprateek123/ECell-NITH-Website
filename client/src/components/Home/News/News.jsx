@@ -17,13 +17,13 @@ export default function News() {
                    <div className="box">
                       <marquee direction="up" behaviour= 'scroll' height="100%" scrollamount={2}>
                          <p> <ChevronRightIcon style={{color:'skyblue'}} /> Public Notice: Display of questions, marked responslege and Associated Hospitals, New Delhi.
-                          <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}}>Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
+                          <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}} target="blank" >Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
                           <p><ChevronRightIcon style={{color:'skyblue'}} /> Public Notice: Display of questions, marked responslege and Associated Hospitals, New Delhi.
-                           <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}}>Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
+                           <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}} target="blank" >Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
                            <p><ChevronRightIcon style={{color:'skyblue'}} /> Public Notice: Display of questions, marked responslege and Associated Hospitals, New Delhi.
-                            <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}}>Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
+                            <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}} target="blank" >Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>
                             <p><ChevronRightIcon style={{color:'skyblue'}} /> Public Notice: Display of questions, marked responslege and Associated Hospitals, New Delhi.
-                             <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}}>Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>                          
+                             <span> <a href="/initiatives" style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}} target="blank" >Read more</a> </span><span> <img src="https://upsee.nic.in/WebInfo/Images/newicon.gif" style={{width:'2em'}} /> </span></p>                          
                       </marquee>
                    </div>
                 </div>
