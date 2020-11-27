@@ -8,6 +8,7 @@ import Authority from '../../components/Home/Authority/Authority'
 import Gallery from '../../components/Home/Gallery/Gallery'
 import './Home.scss'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import News from '../../components/Home/News/News'
 
 export default function Home() {
   const [cls,setCls] = React.useState('none')
@@ -34,6 +35,7 @@ export default function Home() {
           <div className={cls} onClick={hello} > <ArrowUpwardIcon style={{color:'black'}}  /> </div>
           <Main/>
           <Vision/>
+          <News/>
           <Highlight/>
           <Authority/>
           <Gallery/>
