@@ -17,6 +17,7 @@ import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Authority from './Authority/Authority';
 import Partners from './Partners/Partners';
 import Blogs from './Blogs/Blogs';
+import News from './News/News'
 
 export default function Admin(props) {
 
@@ -42,7 +43,7 @@ export default function Admin(props) {
             <div style={{display:'flex',height:'30em',justifyContent:'center',alignItems:'center'}} >  
                <form onSubmit={(e)=>{e.preventDefault();condition()}}> 
                 <h6> Enter Password: </h6>
-                <input type="text" style={{width:'15em'}} onChange={handle} placeholder="Enter Password" /> 
+                <input type="password" style={{width:'15em'}} onChange={handle} placeholder="Enter Password" /> 
                </form>
             </div>: page===2?
             <div className="container main-container pt-5">
@@ -113,6 +114,12 @@ export default function Admin(props) {
                                         </ListItemIcon>
                                             <ListItemText id="tab" primary="Partners"/>
                                     </ListItem>
+                                    <ListItem button selected={tab == 'news'} onClick={() => setTab('news')}>
+                                        <ListItemIcon>
+                                            <FileIcon />
+                                        </ListItemIcon>
+                                            <ListItemText id="tab" primary="News"/>
+                                    </ListItem>
 
                                     </List>
 
@@ -154,7 +161,8 @@ export default function Admin(props) {
                                tab==='auth'?
                                <Authority/>:
                                tab==='partner'?<Partners/>:
-                               tab==='blogs'?<Blogs/>: null}
+                               tab==='blogs'?<Blogs/>:
+                               tab==='news'? <News/> :null}
                     </div>
                 </div>
             </div>
