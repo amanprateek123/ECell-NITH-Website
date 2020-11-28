@@ -11,5 +11,7 @@ router.get('/auth',ctrl.getAuth)
 router.get('/partner',ctrl.getPartner)
 router.post('/getInTouch',ctrl.getInTouch)
 router.get('/blogs',ctrl.getBlog)
+router.get('/news',ctrl.getNews)
+
 
 module.exports = router

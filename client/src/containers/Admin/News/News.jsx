@@ -42,7 +42,7 @@ export default function Partners() {
              </div>
              <div className="frm">
                 <label>Poster Image <span style={{color:'red'}} >*</span></label>
-                <input type="text" name="img" required onChange={handler} />
+                <input type="text" name="img" onChange={handler} />
              </div>
              <div style={{display:'flex',justifyContent:'center',marginBottom:'10px'}} >
                  <Button type="submit" style={{marginBottom:'10px'}} variant="contained" color="primary" >Submit</Button>

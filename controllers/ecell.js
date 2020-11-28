@@ -5,6 +5,7 @@ const GetInTouch = require('../models/getInTouch')
 const Auth = require('../models/authority')
 const Partner = require('../models/partner')
 const Blog = require('../models/blogs')
+const News = require('../models/News')
 
 //gallery
 exports.getGallery = async (req,res)=>{
@@ -83,6 +84,16 @@ exports.getBlog = async (req,res)=>{
     try{
         const blog = await Blog.find({})
         res.json(blog)
+     }
+     catch(e){
+        res.status(404).send({error:e.message})  
+     }
+}
+
+exports.getNews = async (req,res)=>{
+    try{
+        const news = await News.find({})
+        res.json(news)
      }
      catch(e){
         res.status(404).send({error:e.message})  

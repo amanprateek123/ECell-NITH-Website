@@ -10,5 +10,6 @@ router.post('/initiative',upload.single('eventImg'),adminCtrl.postEvent)
 router.post('/auth',adminCtrl.postAuth)
 router.post('/partner',adminCtrl.postPartner)
 router.post('/blogs',adminCtrl.postBlog)
+router.post('/news',adminCtrl.postNews)
 
 module.exports = router

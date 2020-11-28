@@ -4,6 +4,7 @@ const Init = require('../models/initiative')
 const Auth = require('../models/authority')
 const Partner = require('../models/partner')
 const Blog = require('../models/blogs')
+const News = require('../models/News')
 
 //gallery
 exports.postGallery = async (req,res)=>{
@@ -105,6 +106,20 @@ exports.postBlog = async (req,res) =>{
     blog.description = data.description
     try{
         await blog.save()
+        res.json({msg:'Details upload successfully',status:200})
+        console.log('Success!')
+    }
+    catch(e){
+        res.json({error:e.message,status:404})
+        console.log(e)
+    }
+}
+
+exports.postNews = async(req,res)=>{
+    let data = req.body
+    let news = new News (data)
+    try{
+        await news.save()
         res.json({msg:'Details upload successfully',status:200})
         console.log('Success!')
     }
