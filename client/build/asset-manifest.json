@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.743a6b60.chunk.css",
+    "main.js": "/static/js/main.7716e962.chunk.js",
+    "main.js.map": "/static/js/main.7716e962.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.52e001b8.chunk.css": "/static/css/2.52e001b8.chunk.css",
+    "static/js/2.853a1cab.chunk.js": "/static/js/2.853a1cab.chunk.js",
+    "static/js/2.853a1cab.chunk.js.map": "/static/js/2.853a1cab.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.21170754cc188cbd99f7df63546b6a01.js": "/precache-manifest.21170754cc188cbd99f7df63546b6a01.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.52e001b8.chunk.css.map": "/static/css/2.52e001b8.chunk.css.map",
+    "static/css/main.743a6b60.chunk.css.map": "/static/css/main.743a6b60.chunk.css.map",
+    "static/js/2.853a1cab.chunk.js.LICENSE.txt": "/static/js/2.853a1cab.chunk.js.LICENSE.txt",
+    "static/media/01.jpg": "/static/media/01.918531a6.jpg",
+    "static/media/02.jpg": "/static/media/02.a104af94.jpg",
+    "static/media/03.jpg": "/static/media/03.a011a015.jpg",
+    "static/media/04.jpg": "/static/media/04.747d0a21.jpg",
+    "static/media/eve.jpg": "/static/media/eve.81430a72.jpg",
+    "static/media/eve1.jpg": "/static/media/eve1.72e01eed.jpg",
+    "static/media/eve2.jpg": "/static/media/eve2.0d5c94d6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.52e001b8.chunk.css",
+    "static/js/2.853a1cab.chunk.js",
+    "static/css/main.743a6b60.chunk.css",
+    "static/js/main.7716e962.chunk.js"
+  ]
+}

@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store
@@ -32,8 +32,6 @@ yarn-error.log*
 # testing
 /client/coverage
 
-# production
-/client/build
 
 # misc
 /client/.DS_Store
