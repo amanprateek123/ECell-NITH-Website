@@ -30,7 +30,7 @@ export default function News() {
                              <ChevronRightIcon style={{color:'skyblue'}} />
                              {itm.headline}
                              <span> 
-                             <a href={itm.link} style={{marginLeft:'3px',color:'skyblue',cursor:'pointer'}} target="blank" >
+                             <a href={itm.link} style={{margin:'0 0 0 1em',color:'skyblue',cursor:'pointer'}} target="blank" >
                                 Read more
                              </a>
                              </span>

@@ -1,3 +1,3 @@
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb://127.0.0.1:27017/E-Cell-NITH",{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
+mongoose.connect("mongodb+srv://ecellnith:Aman123@@cluster0.px0yn.mongodb.net/test",{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
