@@ -5,7 +5,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 export default function News() {
     const [news,setNews] = useState([])
     useEffect(()=>{
-        fetch('/news').then(res=>res.json()).then(res=>{
+        fetch('/api/news').then(res=>res.json()).then(res=>{
             setNews(res)
         })
     },[])

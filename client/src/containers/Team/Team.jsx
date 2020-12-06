@@ -14,7 +14,7 @@ export default function Team() {
 
 
     useEffect(()=>{
-        fetch('/team').then(res=>res.json()).then(res=>{
+        fetch('/api/team').then(res=>res.json()).then(res=>{
             setTeam(res)
           })
     },[])

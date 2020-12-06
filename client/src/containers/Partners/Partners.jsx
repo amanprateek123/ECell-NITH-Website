@@ -4,7 +4,7 @@ import './Partners.scss'
 export default function Partners() {
     const [part,setPart] = useState([])
     useEffect(()=>{
-        fetch('/partner').then(res=>res.json()).then(res=>{
+        fetch('/api/partner').then(res=>res.json()).then(res=>{
                setPart(res)
              })
     },[])

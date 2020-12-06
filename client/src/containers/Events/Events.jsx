@@ -6,7 +6,7 @@ export default function Events(props) {
     const [event,setEvent] = useState([])
 
     useEffect(()=>{
-        fetch(`/initiatives?id=${props.match.params.id}`).then(res=>res.json()).then(res=>{
+        fetch(`/api/initiatives?id=${props.match.params.id}`).then(res=>res.json()).then(res=>{
                setEvent(res)
              })
     },[])

@@ -6,7 +6,7 @@ export default function Blogs() {
     const [blog,setBlog] = useState([])
 
     useEffect(()=>{
-      fetch('/blogs').then(res=>res.json()).then(res=>{
+      fetch('/api/blogs').then(res=>res.json()).then(res=>{
         setBlog(res)
       })
     },[])

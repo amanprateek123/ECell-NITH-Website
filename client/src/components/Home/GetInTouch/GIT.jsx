@@ -16,7 +16,7 @@ export default function GWS() {
     const [status,setStatus] = useState({})
     const getIn = ()=>{
         return(
-            fetch('/getInTouch',{
+            fetch('/api/getInTouch',{
                 method:'POST',
                 body: JSON.stringify(get),
                 headers: {
