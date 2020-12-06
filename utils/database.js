@@ -1,3 +1,5 @@
 const mongoose = require('mongoose')
+const connection = process.env.mongoUrl || "mongodb+srv://ecellnith:Aman123@@cluster0.px0yn.mongodb.net/test"
 
-mongoose.connect("mongodb+srv://ecellnith:Aman123@@cluster0.px0yn.mongodb.net/test",{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
+mongoose.connect(connection,{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
+console.log(mongoose.connection.readyState);
