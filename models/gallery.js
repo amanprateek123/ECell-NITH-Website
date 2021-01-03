@@ -3,7 +3,7 @@ const validator = require('validator')
 
 const gallerySchema  = new mongoose.Schema({
     image:{
-        type:Buffer    //image stored in form of buffer in database
+        type:String    //image stored in form of buffer in database
     }
 })
 

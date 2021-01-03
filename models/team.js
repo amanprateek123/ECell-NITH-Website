@@ -24,7 +24,7 @@ const teamSchema  = new mongoose.Schema({
         type:String
     },
     image:{
-        type:Buffer    //image stored in form of buffer in database
+        type:String    //image stored in form of buffer in database
     }
 
 })

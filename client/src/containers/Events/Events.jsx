@@ -34,7 +34,7 @@ export default function Events(props) {
                         
                      </div>
                      <div className="pic">
-                         <img src={hi(event[0])} />
+                         <img src={event[0].image} />
                      </div>
                 </div>
                 <div className="about_event">

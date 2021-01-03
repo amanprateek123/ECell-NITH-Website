@@ -79,7 +79,7 @@ export default function ButtonAppBar() {
        <List>
        <ListItem>
            <ListItemIcon style={{display:'flex',justifyContent:'center',width:'100%',height:'2em',alignItems:'center'}} >              
-             <img src="https://ecellnith.org/images/ecell.png" style={{width:'60%'}} /> 
+             <img src="https://ecellnith.github.io/Ecell/pp.png" style={{width:'60%'}} /> 
            </ListItemIcon>
          </ListItem>
          <Divider/>
@@ -129,7 +129,7 @@ export default function ButtonAppBar() {
           </Drawer>
           <div className="nav_bar" >
             <div className="logo" >
-            <img src="https://ecellnith.org/images/ecell.png" />
+            <img src="https://ecellnith.github.io/Ecell/pp.png" />
             </div>
           <Typography variant="h6" className='title'>
              <Link style={{textDecoration:'none',color:'skyblue'}} to="/">Home</Link>

@@ -22,7 +22,7 @@ export default function members(props){
 
     return(
     <div className={classes.container1}>
-    <div className={classes.pics}  style={{backgroundImage:`url(${hi(props.team)})`}} >
+    <div className={classes.pics}  style={{backgroundImage:`url(${props.team.image})`}} >
         <div className={classes.social} >
              {/* <a href='/' target="blank" ><FacebookIcon fontSize="inherit" style={{fontSize:'30px',cursor:'pointer',color:'white'}} /></a> */}
              <a href={linkedin} target="blank" ><LinkedInIcon fontSize="inherit" style={{fontSize:'30px',cursor:'pointer',color:'white'}} /></a>

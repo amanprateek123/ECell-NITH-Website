@@ -32,7 +32,7 @@ export default function Initiatives() {
            <div className='containers1'>
            <div className="b1 box">
            <a href={`/events/${event[0]._id}`} style={{textDecoration:'none'}} >
-              <div  className="cont" style={{backgroundImage:`url(${hi(event[0])})`}} >
+              <div  className="cont" style={{backgroundImage:`url(${event[0].image})`}} >
                   <div className="eve" >
                     <h2> {event[0].eventName} </h2>
                   </div>
@@ -42,7 +42,7 @@ export default function Initiatives() {
           {event.slice(1).map(item=>(
               <div className="b2 box" key={item._id} >
               <a href={`/events/${item._id}`} style={{textDecoration:'none'}} >
-              <div style={{backgroundImage:`url(${hi(item)})`}} className="conts" >
+              <div style={{backgroundImage:`url(${item.image})`}} className="conts" >
                   <div className="eves" >
                     <h2> {item.eventName} </h2>
                   </div>

@@ -4,7 +4,7 @@ import { Paper, Button, } from '@material-ui/core'
 import { useState } from 'react'
 
 export default function Partners() {
-    let schema = {headline:'',link:'',img:''}
+    let schema = {headline:'',link:''}
     const [news,setNews] = useState(schema)
     const handler = (e)=>{
         setNews({...news,[e.target.name]:e.target.value})
@@ -13,13 +13,14 @@ export default function Partners() {
     console.log(news)
 
     const postNews = ()=>{
+        const pic = document.getElementById('image').files
+        var data = new FormData()
+        data.append('news',pic[0])
+        data.append('news',JSON.stringify(news))
         return(
             fetch('/admin/news',{
                 method:'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                  },
-                body: JSON.stringify(news),
+                body: data,
             }).then(res=>res.json()).then(res=>
                 setStatus(res)
             ).catch(err => {
@@ -41,8 +42,8 @@ export default function Partners() {
                 <input type="text" name="link" required onChange={handler} />
              </div>
              <div className="frm">
-                <label>Poster Image <span style={{color:'red'}} >*</span></label>
-                <input type="text" name="img" onChange={handler} />
+                <label> Poster Image<span style={{color:'red'}} ></span></label>
+                <input type="file" id="image"/>
              </div>
              <div style={{display:'flex',justifyContent:'center',marginBottom:'10px'}} >
                  <Button type="submit" style={{marginBottom:'10px'}} variant="contained" color="primary" >Submit</Button>
