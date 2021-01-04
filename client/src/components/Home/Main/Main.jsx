@@ -7,7 +7,7 @@ export default function Main() {
     function hello() {
         window.scroll({
           top: document.body.offsetHeight/5.5,
-          left: 0, 
+          left: 0,  
           behavior: 'smooth',
         });
       }
@@ -15,9 +15,9 @@ export default function Main() {
         <div>
         <div className="mainImgs">
         <div className="mainConts" >
-        <div className="container mx-auto" >
+        <div className=" mx-auto" >
           <p className="main_text" >NATIONAL INSTITUTE OF TECHNOLOGY, HAMIRPUR</p>
-           <Typography variant="h2" className="typo" >ENTREPRENEURSHIP CELL</Typography>
+           <h2 className="ecell">ENTREPRENEURSHIP CELL</h2>
            <div className="what">
               <img src="https://www.ecell.in/2020/images/bottom-arrow.png" alt="bottom"/>
               <p className="gets" onClick={hello} >What We Do?</p>
