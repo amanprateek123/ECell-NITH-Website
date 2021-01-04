@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Home from './containers/Home/Home'
 import { Route, Switch } from 'react-router-dom'
 import './App.css';
@@ -12,13 +12,24 @@ import Events from './containers/Events/Events';
 import Footer from './containers/Footer/Footer';
 import Partners from './containers/Partners/Partners';
 import Blogs from './containers/Blogs/Blogs';
+import gif from './ecell.gif'
 
-function App() {
-  return (
-    <React.Fragment>
+class App extends Component{
+  state={
+    show:true
+  }
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({show:false})        
+    },2500)
+  }
+  render(){
+    return (
+      <React.Fragment>
       <Navbar/>
       <Switch>
-        <Route path="/" component={Home} exact />
+        {this.state.show?<img src={gif}/>:
+        <Route path="/" component={Home} exact />}
         <Route path="/initiatives" component={Initiatives} />
         <Route path="/admin" component={Admin} />
         <Route path="/gallery" component={Gallery} />
@@ -29,7 +40,8 @@ function App() {
         <Route component={E404} />
       </Switch>
     </React.Fragment>
-  );
+    )
+  }
 }
 
 export default App;
