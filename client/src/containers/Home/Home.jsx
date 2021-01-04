@@ -9,8 +9,10 @@ import Gallery from '../../components/Home/Gallery/Gallery'
 import './Home.scss'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import News from '../../components/Home/News/News'
+import { useEffect } from 'react'
+import gif from '../../ecell.gif'
 
-export default function Home() {
+export default function Home(props) {
   const [cls,setCls] = React.useState('none')
   const listenScrollEvent = e => {
     if (window.scrollY > 250) {
@@ -29,18 +31,20 @@ export default function Home() {
       behavior: 'smooth',
     });
   }
-
     return (
-        <div>
+        <React.Fragment>
+          {props.show?<div className="gif" ><img src={gif} /></div>:
+          <div>
           <div className={cls} onClick={hello} > <ArrowUpwardIcon style={{color:'black'}}  /> </div>
           <Main/>
           <Vision/>
           <News/>
-          <Highlight/>
+          <Highlight/> hi 
           <Authority/>
           <Gallery/>
           <GIT/>
           <Footer/>
-        </div>
+        </div>}
+        </React.Fragment>
     )
 }

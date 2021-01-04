@@ -20,16 +20,17 @@ class App extends Component{
   }
   componentDidMount(){
     setTimeout(()=>{
-      this.setState({show:false})        
-    },2500)
+      this.setState({show:false})
+   },2500)
   }
   render(){
     return (
       <React.Fragment>
       <Navbar/>
       <Switch>
-        {this.state.show?<img src={gif}/>:
-        <Route path="/" component={Home} exact />}
+        <Route path="/" exact >
+          <Home show={this.state.show} />
+        </Route>
         <Route path="/initiatives" component={Initiatives} />
         <Route path="/admin" component={Admin} />
         <Route path="/gallery" component={Gallery} />
