@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+.main{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .heading{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .card-container{
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @media(max-width: 600px){
+      flex-direction: column;
+  }
+  }
+  .card{
+    font-family: 'Hind Siliguri', sans-serif;
+   border: 1.8px solid aqua !important ;
+   border-radius: 20px !important;
+   margin: 20px;
+   width: 27%;
+   padding: 10px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  @media (max-width: 600px) {
+width: 80%
+  }
+  }

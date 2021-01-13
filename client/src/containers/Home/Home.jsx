@@ -11,6 +11,7 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import News from '../../components/Home/News/News'
 import { useEffect } from 'react'
 import gif from '../../ecell.gif'
+import Accompolishments from '../../components/Home/Accomplishment/Accomplishments'
 
 export default function Home(props) {
   const [cls,setCls] = React.useState('none')
@@ -39,7 +40,8 @@ export default function Home(props) {
           <Main/>
           <Vision/>
           <News/>
-          <Highlight/> hi 
+          <Highlight/> 
+          <Accompolishments/>
           <Authority/>
           <Gallery/>
           <GIT/>
