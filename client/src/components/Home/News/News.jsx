@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './News.scss'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import gif from './animation.gif'
 
 export default function News() {
     const [news,setNews] = useState([])
@@ -17,7 +18,7 @@ export default function News() {
             {news.length>0?
                 <div className="news_sec">
                 <div className="imgs" >
-                    <img src={news[news.length-1].img}/>
+                        <img src={ gif }/>
                 </div>
                 <div className="cont" >
                    <div className="marker" >

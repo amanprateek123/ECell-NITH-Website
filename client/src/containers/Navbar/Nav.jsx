@@ -23,14 +23,14 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    width:'100%',
-    position:'fixed',
-    zIndex:100
+    width: "100%",
+    position: "fixed",
+    zIndex: 100,
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color:'skyblue'
-  }
+    color: "#01a8f3",
+  },
 }));
 
 export default function ButtonAppBar() {
@@ -45,7 +45,7 @@ export default function ButtonAppBar() {
 
   const [cls,setCls] = React.useState('')
   const listenScrollEvent = e => {
-    if (window.scrollY > 50) {
+    if (window.scrollY >100) {
       setCls("black")
     } else {
         setCls("")
@@ -118,7 +118,7 @@ export default function ButtonAppBar() {
   )
 
   return (
-    <div className={classes.root+" "+cls}>
+    <div className={classes.root+" "+cls} style={{boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px'}} >
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} id="menu" onClick={toggleDrawer('left', true)}  color="inherit" aria-label="menu">
@@ -132,25 +132,25 @@ export default function ButtonAppBar() {
             <img src="https://ecellnith.github.io/Ecell/pp.png" />
             </div>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/">Home</Link>
+             <Link className="menu_list" to="/">Home</Link>
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/initiatives">Initiatives</Link>  
+             <Link className="menu_list" to="/initiatives">Initiatives</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/blog">Blogs</Link> 
+             <Link className="menu_list" to="/blog">Blogs</Link> 
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/partner">Partners</Link> 
+             <Link className="menu_list" to="/partner">Partners</Link> 
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/team">Teams</Link>  
+             <Link className="menu_list" to="/team">Teams</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} to="/gallery">Gallery</Link>  
+             <Link className="menu_list" to="/gallery">Gallery</Link>  
           </Typography>
           <Typography variant="h6" className='title'>
-             <Link style={{textDecoration:'none',color:'skyblue'}} onClick={hello} to="/">Contact Us</Link>  
+             <Link className="menu_list" onClick={hello} to="/">Contact Us</Link>  
           </Typography>
           </div>
         </Toolbar>

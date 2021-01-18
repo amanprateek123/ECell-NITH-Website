@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import './Gallery.scss';
+import gif from '../../loading.gif'
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 function typedArrayToURL(typedArray, mimeType) {
@@ -41,7 +42,7 @@ export default function Galleries() {
               </div>
     </div>:
     <div className="spin">
-      <CircularProgress/>
+      <img src={gif}/>
     </div>
   );
 };

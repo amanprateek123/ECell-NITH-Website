@@ -1,99 +1,107 @@
-.draw{
-    width:250px;
+.draw {
+  width: 250px;
 }
 
-#menu{
-    display:none;
-    @media(max-width: 600px){
-        display: block;
-    }
+#menu {
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+  }
 }
-.mainImg{
-    background: linear-gradient(
-    rgba(255,255,255,0.1),
-    rgba(0,0,0,0)
-  ),url('https://img.wallpapersafari.com/desktop/1280/1024/75/70/GLNith.jpg');
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    background-position: top;
-    background-size: cover;
-    height: 61.2em;
+.mainImg {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
+    url("https://img.wallpapersafari.com/desktop/1280/1024/75/70/GLNith.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-position: top;
+  background-size: cover;
+  height: 61.2em;
+  width: 100%;
+  @media (max-width: 600px) {
+    height: 46em;
+  }
+}
+.MuiAppBar-colorPrimary {
+  background-color: transparent !important;
+}
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+.nav_bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1em;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.logo {
+  position: absolute;
+  padding: 1.5em;
+  left: 2em;
+  width: 10%;
+  img {
     width: 100%;
-    @media(max-width: 600px){
-       height: 46em;
-    }
+  }
 }
-.MuiAppBar-colorPrimary{
-    background-color: transparent!important;
+.mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -2em;
+  @media (max-width: 600px) {
+    margin-top: -5em;
+  }
 }
-.MuiPaper-elevation4{
-    box-shadow: none!important;
+.typo {
+  text-align: center;
+  color: skyblue !important;
+  font-size: 6em !important;
+  font-weight: bold;
+  font-family: "Anton", sans-serif !important;
+  @media (max-width: 600px) {
+    font-size: 2.3em !important;
+  }
 }
-.nav_bar{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding:0 1em;
-    @media(max-width: 600px){
-        display: none;
-    }
-}
-
-.logo{
-    position: absolute;
-    padding: 1.5em;
-    left: 2em;
-    width: 10%;
-    img{
-        width: 100%;
-    }
-}
-.mainCont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-top: -2em;
-    @media(max-width: 600px){
-     margin-top: -5em ;
-    }
-}
-.typo{
-    text-align: center;
-    color: skyblue!important;
-    font-size: 6em!important;
-    font-weight: bold;
-    font-family: 'Anton', sans-serif!important;
-    @media(max-width: 600px){
-        font-size: 2.3em!important;
-    }
-}
-.title{
-    margin-left: 1px!important;
-    font-weight: bold!important;
-    color: white!important;
-    padding: 0.2em 1em!important;
-    border-radius: 20px;
-    cursor: pointer;
-    @media(max-width: 600px){
-        font-size: 1.3em!important;
-    }
+.title {
+  margin-left: 1px !important;
+  font-weight: bold !important;
+  color: white !important;
+  padding: 0.2em 1em !important;
+  border-radius: 20px;
+  cursor: pointer;
+  @media (max-width: 600px) {
+    font-size: 1.3em !important;
+  }
 }
 
-.black{
-    background-color: #333;
+.black {
+  background-color: #fff;
 }
 
-.social_media{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    div{
-        font-size: 25px;
-        color: skyblue;
-        margin: 0 .4em;
-    }
+.social_media {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  div {
+    font-size: 25px;
+    color: skyblue;
+    margin: 0 0.4em;
+  }
+}
+
+.menu_list {
+  color: black;
+  font-weight: bolder !important;
+  
+}
+.menu_list:hover {
+  color: #01a8f3;
+  text-decoration: none;
 }

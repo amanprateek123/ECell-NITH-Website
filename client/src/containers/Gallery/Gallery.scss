@@ -96,7 +96,11 @@
      }
 
 .spin{
-    position: absolute;
-    top: 50%;
-    left: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    img{
+        width: 10%;
+    }
 }
