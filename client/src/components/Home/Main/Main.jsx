@@ -22,8 +22,8 @@ export default function Main() {
   },[])
   return (
     <div>
+      <video src={src} className="video" autoPlay loop muted />
       <div className="mainImgs">
-        <video src={ src } className="video" autoPlay loop muted />
         <div className="mainConts">
           <div className="content">
             <p className="main_text">

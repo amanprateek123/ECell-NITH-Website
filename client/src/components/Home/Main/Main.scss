@@ -21,14 +21,14 @@
   height: 100vh;
   width: 100%;
   @media (max-width: 600px) {
-    min-height: 100%;;
+    height: 90vh;
   }
 }
 .content {
   position: absolute;
   top: 27%;
-  @media(max-width:600px){
-    top:45%
+  @media (max-width: 600px) {
+    top: 45%;
   }
 }
 .main_text {
@@ -98,11 +98,11 @@
 }
 .video {
   position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
   width: 100%;
-  min-height: 100%;
-  @media(max-width:600px){
-    min-height: 95vh;
+  height: auto;
+  @media (max-width: 600px) {
+    height: auto;
   }
 }
