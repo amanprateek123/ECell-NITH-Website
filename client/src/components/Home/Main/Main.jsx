@@ -12,18 +12,18 @@ export default function Main() {
       behavior: "smooth",
     });
   }
-  const [src, setSrc] = React.useState(vid1)
+  const [src, setSrc] = React.useState(vid1);
   useEffect(() => {
     if (window.innerWidth < 600) {
       setSrc(vid2);
     } else {
       setSrc(vid1);
     }
-  },[])
+  }, []);
   return (
     <div>
-      <video src={src} className="video" autoPlay loop muted />
       <div className="mainImgs">
+        <video src={src} className="video" autoPlay loop muted />
         <div className="mainConts">
           <div className="content">
             <p className="main_text">
