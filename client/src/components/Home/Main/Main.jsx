@@ -25,11 +25,12 @@ export default function Main() {
       <div className="mainImgs">
         <video src={src} className="video" autoPlay loop muted />
         <div className="mainConts">
-          <div className="content">
+          <div className="contents">
             <p className="main_text">
               NATIONAL INSTITUTE OF TECHNOLOGY HAMIRPUR
             </p>
             <h2 className="ecell">ENTREPRENEURSHIP CELL</h2>
+            <p className="main_text1">Cooperation is culture here...</p>
             <div className="what">
               <img
                 src="https://www.ecell.in/2020/images/bottom-arrow.png"

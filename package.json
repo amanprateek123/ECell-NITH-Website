@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/amanprateek123/E-Cell-NITH-Website#readme",
   "dependencies": {
+    "aws-sdk": "^2.834.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.0",
     "mongoose": "^5.10.0",
     "multer": "^1.4.2",
+    "uuid": "^8.3.2",
     "validator": "^13.1.1"
   },
   "devDependencies": {

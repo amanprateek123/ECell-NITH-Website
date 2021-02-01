@@ -41,7 +41,7 @@ export default function Home(props) {
           <Vision/>
           <News/>
           <Highlight/> 
-          <Accompolishments/>
+          {/*<Accompolishments/>*/}
           <Authority/>
           <Gallery/>
           <GIT/>
