@@ -7,15 +7,7 @@ import { NavLink } from "react-router-dom";
 import gif from "../../loading.gif";
 
 export default function Team() {
-  const filterTeam = (year) => {
-    let arr = team.filter((itm) => itm.year === year);
-    return arr;
-  };
   const [team, setTeam] = useState([]);
-  const [tab, setTab] = useState(0);
-  const [array, setArray] = useState(filterTeam("2020"));
-  const [year, setYear] = useState(new Date().getFullYear());
-
   useEffect(() => {
     fetch("/api/team")
       .then((res) => res.json())
@@ -23,12 +15,16 @@ export default function Team() {
         setTeam(res);
       });
   }, []);
-
+  const [tab, setTab] = useState();
+  const [array, setArray] = useState([]);
   const handler = (k, y) => {
     setTab(k);
-    setArray(filterTeam(y));
+    let arr = team.filter((itm) => itm.year === y);
+    setArray(arr);
   };
-  console.log("a", array);
+  useEffect(() => {
+    handler(0, "2020");
+  }, [team]);
 
   return (
     <React.Fragment>

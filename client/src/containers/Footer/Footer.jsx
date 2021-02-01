@@ -28,18 +28,21 @@ export default function Footer() {
             <span>E-Cell NIT Hamirpur</span>
           </div>
           <div className="social">
-            <div>
+            <a href="https://www.facebook.com/eclubnith" target="blank">
               <FacebookIcon fontSize="inherit" />
-            </div>
-            <div>
+            </a>
+            <a href="https://www.instagram.com/ecell_nith/" target="blank">
               <InstagramIcon fontSize="inherit" />
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/entrepreneurshipcellnith/"
+              target="blank"
+            >
               <LinkedInIcon fontSize="inherit" />
-            </div>
-            <div>
+            </a>
+            <a href="https://twitter.com/ecellnith" target="blank">
               <TwitterIcon fontSize="inherit" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

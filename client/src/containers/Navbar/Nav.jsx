@@ -12,6 +12,9 @@ import ListItemText from "@material-ui/core/ListItemText";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
+import MailIcon from "@material-ui/icons/Mail";
+import PhoneIcon from "@material-ui/icons/Phone";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import "./Nav.scss";
 import { Link, NavLink } from "react-router-dom";
@@ -154,20 +157,54 @@ export default function ButtonAppBar(props) {
           </NavLink>
         </ListItem>
         <Divider />
-        <ListItem className="social_media">
+        <ListItem>Contact Us:</ListItem>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column-reverse",
+          }}
+        >
+          <ListItem className="social_media">
+            <a href="https://www.facebook.com/eclubnith" target="blank">
+              <FacebookIcon fontSize="inherit" />
+            </a>
+            <a href="https://www.instagram.com/ecell_nith/" target="blank">
+              <InstagramIcon fontSize="inherit" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/entrepreneurshipcellnith/"
+              target="blank"
+            >
+              <LinkedInIcon fontSize="inherit" />
+            </a>
+            <a href="https://twitter.com/ecellnith" target="blank">
+              <TwitterIcon fontSize="inherit" />
+            </a>
+          </ListItem>
+          <Divider />
           <div>
-            <FacebookIcon fontSize="inherit" />
+            <ListItem>
+              <div className="det">
+                <MailIcon />
+                <span> admin@ecellnith.org</span>
+              </div>
+            </ListItem>
+            
+            <ListItem>
+              <div className="det">
+                <PhoneIcon />
+                <span>+917665715847</span>
+              </div>
+            </ListItem>
+            
+            <ListItem>
+              <div className="det">
+                <LocationOnIcon />
+                <span>E-Cell NIT Hamirpur</span>
+              </div>
+            </ListItem>
           </div>
-          <div>
-            <InstagramIcon fontSize="inherit" />
-          </div>
-          <div>
-            <LinkedInIcon fontSize="inherit" />
-          </div>
-          <div>
-            <TwitterIcon fontSize="inherit" />
-          </div>
-        </ListItem>
+        </div>
       </List>
     </div>
   );

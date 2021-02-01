@@ -7,7 +7,7 @@ import vid2 from "./web_2.mp4";
 export default function Main() {
   function hello() {
     window.scroll({
-      top: document.body.offsetHeight / 6.5,
+      top: document.body.offsetHeight / 5.8,
       left: 0,
       behavior: "smooth",
     });
