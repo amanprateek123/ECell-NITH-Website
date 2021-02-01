@@ -172,9 +172,7 @@ export default function ButtonAppBar(props) {
     </div>
   );
   return (
-    <div
-      className={classes.root + " " + cls}
-    >
+    <div className={classes.root + " " + cls}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -254,7 +252,7 @@ export default function ButtonAppBar(props) {
               </NavLink>
             </Typography>
             <Typography variant="h6" className="title">
-              <Link className="menu_list" to="/#contact">
+              <Link className="menu_list" to="/" onClick={hello}>
                 Contact Us
               </Link>
             </Typography>

@@ -65,8 +65,8 @@ export default function Events(props) {
         <h5>About</h5>
         <i> {event[0].description} </i>
       </div>
-      <div className="gal">
-        <h3>Gallery:</h3>
+      <div className="gal1">
+        <h3>Gallery</h3>
         <div className="list_gal">
           {image.length > 0
             ? image.map((item) => <img src={item.image} className="img" key={item._id} />)

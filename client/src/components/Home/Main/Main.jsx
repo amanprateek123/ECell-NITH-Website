@@ -21,9 +21,9 @@ export default function Main() {
     }
   }, []);
   return (
-    <div>
+    <div className="vi" style={{height:window.screen.height}}  >
+      <video src={src} className="video" autoPlay loop muted />
       <div className="mainImgs">
-        <video src={src} className="video" autoPlay loop muted />
         <div className="mainConts">
           <div className="contents">
             <p className="main_text">
