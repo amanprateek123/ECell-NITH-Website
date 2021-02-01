@@ -1,8 +1,9 @@
 .gal{
-    margin: 40px 0;
+    margin: 40px 0 !important;
     font-family: 'Epilogue', sans-serif;
     font-weight: 600;
-    text-align: center;
+    text-align: center !important;
+    width: 100% !important;
     text-transform: capitalize;
     @media(max-width: 600px){
         font-size: 30px;

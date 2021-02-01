@@ -28,7 +28,7 @@ export default function Initiatives() {
 
     return (
        event.length? <div className="initi" >
-           <p className='heads'>Our Initiatives</p>
+           <h1 className='heads'>Our Initiatives</h1>
            <div className='containers1'>
            <div className="b1 box">
            <a href={`/events/${event[0]._id}`} style={{textDecoration:'none'}} >

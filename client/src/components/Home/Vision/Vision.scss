@@ -1,69 +1,78 @@
-
-.vision{
-    display: flex;
-    width:80%;
-    align-items: stretch;
-    justify-content: space-around;
-    margin:2em auto;
-    background-color: white;
-    @media(max-width: 600px){
-        flex-direction: column;
-    }
+.vision {
+  display: flex;
+  width: 80%;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 2em auto;
+  background-color: white;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
-.pop{
-    width: 30%;
-    border: solid  #33d6ff 1px;
-    cursor: pointer;
-    border-radius: 20px;
-    @media(max-width: 600px){
-       width: 100%;
-       margin: auto;
-       margin-top: 1em;
-    }
-}
-.pop:hover{
-    background-color:rgba(0,0,0,0.8);
-    color: white;
-    transform-origin:left ;
-    transition: .2s ease-in-out;
-}
-.pop:hover .note{
-    color: white;
-}
-
-.image{
-    width: 27%;
-    margin: 10px auto;
-}
-img{
+.pop {
+  width: 30%;
+  border: solid #33d6ff 1px;
+  cursor: pointer;
+  border-radius: 20px;
+  @media (max-width: 600px) {
     width: 100%;
+    margin: auto;
+    margin-top: 1em;
+  }
 }
-.heading{
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    @media(max-width: 600px){
-        font-size: 23px;
-    }
+.pop:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transform-origin: left;
+  transition: 0.2s ease-in-out;
+}
+.pop:hover .note {
+  color: white;
 }
 
-.note{
-    font-family: 'Baloo Tammudu 2', cursive;
-    text-align: center;
-    margin: 20px;
-    color: black;
-    @media(max-width: 600px){
-        font-size: 15px;
-    }
+.image {
+  width: 27%;
+  margin: 10px auto;
 }
-.welcome{
-    margin: 40px;
-    font-family: 'Epilogue', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    @media(max-width: 600px){
-        font-size: 22px;
-        margin: 1em;
-        margin-bottom: -1em;
-    }
+img {
+  width: 100%;
+}
+.heading {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 600px) {
+    font-size: 23px;
+  }
+}
+
+.note {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px;
+  color: black;
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
+}
+.welcome {
+  margin: 40px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 600px) {
+    font-size: 22px;
+    margin: 1em;
+    margin-bottom: -1em;
+  }
+}
+
+.welcome1 {
+  margin: 3em 0 0;
+  text-align: center;
+  font-weight: bold;
+  @media (max-width: 600px) {
+    margin: -1em 0 0;
+    font-size: 23px;
+  }
 }

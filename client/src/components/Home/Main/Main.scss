@@ -26,7 +26,7 @@
 }
 .contents {
   position: absolute;
-  top: 27%;
+  top: 35%;
   @media (max-width: 600px) {
     top: 45%;
   }
@@ -35,13 +35,13 @@
   color: white;
   font-size: 25px;
   text-align: center;
-  font-weight: bold;
   margin-top: 1.5em;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.15);
+  font-family: "eras itc";
   @media (max-width: 600px) {
     font-size: 0.8em !important;
     margin-top: -1.5em;
@@ -51,7 +51,6 @@
   color: white;
   font-size: 22px;
   text-align: center;
-  font-weight: bold;
   margin-top: 1em;
   margin-bottom: 2em;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
@@ -59,6 +58,12 @@
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.15);
+  font-family: "eras itc";
+  @media (max-width: 600px) {
+    font-size: 0.8em !important;
+    font-weight: bolder;
+    text-shadow: none;
+  }
 }
 .ecell {
   font-family: "eras itc";
@@ -81,6 +86,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 1em;
+  font-weight: normal;
   @media (max-width: 600px) {
     display: none;
   }
@@ -100,11 +106,7 @@
   text-transform: none !important;
   cursor: pointer;
   font-weight: bold;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
+ font-family: "eras itc";
 }
 .gets:hover {
   color: #01a8f3 !important;
@@ -112,9 +114,8 @@
 .video {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
-  min-height: 100%;
   @media (max-width: 600px) {
     min-height: auto;
     top: 0;

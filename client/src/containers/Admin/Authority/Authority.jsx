@@ -16,7 +16,6 @@ export default function Authority() {
         var data = new FormData()
         data.append('auth',pic[0])
         data.append('auth',JSON.stringify(auth))
-        console.log(auth)
         return(
             fetch('/admin/auth',{
                 method:'POST',

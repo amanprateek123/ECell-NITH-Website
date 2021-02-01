@@ -26,7 +26,7 @@ export default function Galleries() {
   //  }
   return (
     img.length?<div className="gallery" >
-      <p className='head'> Gallery</p>
+      <h1 className='head'> Gallery</h1>
       <div className='containers container'>
         <div className="b-1 box">
           <div style={{backgroundImage:`url(${img[0].image})`}}>

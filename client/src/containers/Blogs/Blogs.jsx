@@ -13,11 +13,11 @@ export default function Blogs() {
 
     return (
         <div className="blogs" >
-          <p className='head2'>Blogs</p>
+          <h1 className='head2'>Blogs</h1>
           <div className="list_blog">
                {blog.length>0?
                   blog.map(data=>(
-                    <Card data={data} />
+                    <Card data={data} key={data._id} />
                   ))
                 :null}
           </div>

@@ -33,7 +33,7 @@ export default function Team() {
   return (
     <React.Fragment>
       <div className="teams">
-        <div className="team_head">E-Cell Team</div>
+        <h1 className="team_head">E-Cell Team</h1>
         <div className="alumni">
           <div className="year">
             <div
@@ -59,7 +59,7 @@ export default function Team() {
             array.length > 0 ? (
               <div className="list">
                 {array.map((item) => (
-                  <Members team={item} />
+                  <Members team={item} key={item._id} />
                 ))}
               </div>
             ) : (

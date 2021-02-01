@@ -69,7 +69,7 @@ export default function Events(props) {
         <h3>Gallery:</h3>
         <div className="list_gal">
           {image.length > 0
-            ? image.map((item) => <img src={item.image} className="img" />)
+            ? image.map((item) => <img src={item.image} className="img" key={item._id} />)
             : null}
         </div>
       </div>

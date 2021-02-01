@@ -21,7 +21,6 @@ export default function Authority() {
     var data = new FormData();
     data.append("gal", pic[0]);
     data.append("gal", JSON.stringify(gal));
-    console.log(gal);
     return fetch("/admin/gal", {
       method: "POST",
       body: data,
