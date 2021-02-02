@@ -65,14 +65,16 @@ export default function Events(props) {
         <h5>About</h5>
         <i> {event[0].description} </i>
       </div>
-      <div className="gal1">
-        <h3>Gallery</h3>
-        <div className="list_gal">
-          {image.length > 0
-            ? image.map((item) => <img src={item.image} className="img" key={item._id} />)
-            : null}
+      {image.length > 0 ? (
+        <div className="gal1">
+          <h3>Gallery</h3>
+          <div className="list_gal">
+            {image.map((item) => (
+              <img src={item.image} className="img" key={item._id} />
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   ) : null;
 }
