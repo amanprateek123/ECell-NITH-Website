@@ -17,15 +17,18 @@ export default function Blogs() {
   return (
     <div className="blogs">
       <h1 className="head2">Blogs</h1>
-      <div className="list_blog">
-        {blog.length > 0 ? (
-          blog.map((data) => <Card data={data} key={data._id} />)
-        ) : (
-          <div className="spin">
-            <img src={gif} />
-          </div>
-        )}
-      </div>
+      {blog.length > 0 ? (
+        <div className="list_blog">
+          {blog.map((data) => (
+            <Card data={data} key={data._id} />
+          ))}
+          )
+        </div>
+      ) : (
+        <div className="spin">
+          <img src={gif} />
+        </div>
+      )}
     </div>
   );
 }
