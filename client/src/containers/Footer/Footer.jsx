@@ -7,6 +7,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 export default function Footer() {
   return (
@@ -42,6 +43,12 @@ export default function Footer() {
             </a>
             <a href="https://twitter.com/ecellnith" target="blank">
               <TwitterIcon fontSize="inherit" />
+            </a>
+            <a
+              href="https://youtube.com/channel/UCGOp-u-AUwfGOqKBiEGHWJw"
+              target="blank"
+            >
+              <YouTubeIcon fontSize="inherit" />
             </a>
           </div>
         </div>

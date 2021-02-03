@@ -35,10 +35,10 @@ export default function News() {
                 scrollamount={2}
               >
                 {news.map((itm) => (
-                  <p key={itm._id} >
+                  <p key={itm._id}>
                     <ChevronRightIcon style={{ color: "skyblue" }} />
                     {itm.headline}
-                    <span>
+                    {/*<span>
                       <a
                         href={itm.link}
                         style={{
@@ -50,8 +50,8 @@ export default function News() {
                       >
                         Read more
                       </a>
-                    </span>
-                    <span>
+                      </span>*/}
+                    <span style={{marginLeft:'0.5em'}} >
                       <img
                         src="https://upsee.nic.in/WebInfo/Images/newicon.gif"
                         style={{ width: "2em" }}

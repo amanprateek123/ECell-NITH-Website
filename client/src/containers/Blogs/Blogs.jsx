@@ -26,7 +26,8 @@ export default function Blogs() {
         </div>
       ) : (
         <div className="spin">
-          <img src={gif} />
+          {/*<img src={gif} />*/}
+          <h2>Coming Soon ...</h2>
         </div>
       )}
     </div>
