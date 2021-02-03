@@ -33,7 +33,7 @@ export default function Admin(props) {
     setValue(e.target.value);
   };
   const condition = () => {
-    if (value === "Scam@2021") {
+    if (value === process.env.PASS) {
       setPage(2);
     } else {
       setPage(3);
