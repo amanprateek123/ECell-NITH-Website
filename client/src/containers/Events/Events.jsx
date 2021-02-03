@@ -50,10 +50,7 @@ export default function Events(props) {
             </Button>
           ) : (
             <p style={{ color: "red", fontWeight: "bold", margin: "3em 0" }}>
-              {" "}
-              The event registration was closed...!
-              <br />
-              Better luck next time!{" "}
+              Sorry, The event registration was closed...!
             </p>
           )}
         </div>

@@ -189,18 +189,18 @@ export default function ButtonAppBar(props) {
                 <span> admin@ecellnith.org</span>
               </div>
             </ListItem>
-            
+
             <ListItem>
               <div className="det">
                 <PhoneIcon />
-                <span>+917665715847</span>
+                <span> +916393222078</span>
               </div>
             </ListItem>
-            
+
             <ListItem>
               <div className="det">
                 <LocationOnIcon />
-                <span>E-Cell NIT Hamirpur</span>
+                <span> E-Cell NIT Hamirpur</span>
               </div>
             </ListItem>
           </div>

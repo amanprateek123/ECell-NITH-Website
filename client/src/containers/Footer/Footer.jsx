@@ -17,11 +17,11 @@ export default function Footer() {
           <h4>Contact Us</h4>
           <div className="det">
             <MailIcon />
-            <span> admin@ecellnith.org</span>
+            <span>entrepreneurshipcellnith@gmail.com</span>
           </div>
           <div className="det">
             <PhoneIcon />
-            <span>+917665715847</span>
+            <span>+916393222078</span>
           </div>
           <div className="det">
             <LocationOnIcon />

@@ -1,42 +1,69 @@
-import React from 'react'
-import './High.scss'
-import img from './eve.jpg'
-import img1 from './eve1.jpg'
-import img2 from './eve2.jpg'
+import React from "react";
+import "./High.scss";
+import img from "./eve.jpeg";
+import img1 from "./eve1.jpeg";
+import img2 from "./eve2.jpeg";
+import { Link } from "@material-ui/core";
 
 export default function High() {
-    return (
-        <React.Fragment>
-            <h1 className="high">Highlight Events</h1>
-            <div className="highlight" >
-               <div className="back" style={{backgroundImage:`url(${img})`}}  data-aos="zoom-in" data-aos-duration="1500" >
-                  <div className="bg" >
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
-                        aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
-                        dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of</p>
-                  </div>
-               </div>
-               <div className="back" style={{backgroundImage:`url(${img1})`}} data-aos="zoom-in" data-aos-duration="1500">
-               <div className="bg" >
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
-                        aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
-                        dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of</p>
-                  </div>
-               </div>
-               <div className="back" style={{backgroundImage:`url(${img2})`}} data-aos="zoom-in" data-aos-duration="1500">
-               <div className="bg" >
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum praesentium eligendi
-                        aliquid pariatur delectus repellat cumque porro neque ratione facilis mollitia, placeat magnam omnis
-                        dolorum est reprehenderit nisi eum! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Perferendis, officiis? Eius of</p>
-                  </div>
-               </div>
-            </div>
-        </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <h1 className="high">Highlight Events</h1>
+      <div className="highlight">
+        <Link
+          href="/events/601927ae11024a0017c59403"
+          className="back"
+          style={{ backgroundImage: `url(${img})` }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="bg">
+            <p>
+              Without Practicals and experiments, Collecting knowledge is like
+              learning swimming without stepping into waters.🏊‍♀ Here is your
+              next GREAT OPPORTUNITY! E-Cell NITH brings forth the maiden
+              edition of SIP (Start-up Internship Program) to help you connect
+              with various start-ups and reach out to them for industrial
+              exposure. So don’t miss this cause who knows this internship may
+              land you the affair of your dreams!
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="/events/601929a711024a0017c59404"
+          className="back"
+          style={{ backgroundImage: `url(${img1})` }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="bg">
+            <p>
+              We the E-cell, in collaboration with Organization Committee and
+              INS&Control, bring forth a quiz on a lot of fun topics with Prizes
+              worth 5K.
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="/events/60192bfd11024a0017c59405"
+          className="back"
+          style={{
+            backgroundImage: `url(${img2})`,
+            backgroundPosition: "left",
+          }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="bg">
+            <p>
+              Free stocks that will make you earn thousands. Try out the market
+              without investing real money. _If you are new to investment, and
+              think you have what it takes to be a Stock Market Mogul, take the
+              chance.
+            </p>
+          </div>
+        </Link>
+      </div>
+    </React.Fragment>
+  );
 }
