@@ -60,7 +60,7 @@ export default function Events(props) {
       </div>
       <div className="about_event">
         <h5>About</h5>
-        <i> {event[0].description} </i>
+        <p> {event[0].description} </p>
       </div>
       {image.length > 0 ? (
         <div className="gal1">
