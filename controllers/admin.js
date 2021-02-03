@@ -10,8 +10,8 @@ const AWS = require("aws-sdk");
 const uuid = require("uuid");
 
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAIN3XQQQ67LDMNNOA",
-  secretAccessKey: "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",
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
 });
 
 //gallery
@@ -20,7 +20,7 @@ exports.postGallery = async (req, res) => {
   let myfile = req.file.originalname.split(".");
   const fileType = myfile[myfile.length - 1];
   const params = {
-    Bucket: "ecell-website",
+    Bucket: process.env.BUCKET_NAME,
     Key: `${uuid.v4()}.${fileType}`,
     Body: prod,
   };
@@ -48,7 +48,7 @@ exports.postGal = async (req, res) => {
   let myfile = req.file.originalname.split(".");
   const fileType = myfile[myfile.length - 1];
   const params = {
-    Bucket: "ecell-website",
+    Bucket: process.env.BUCKET_NAME,
     Key: `${uuid.v4()}.${fileType}`,
     Body: img,
   };
@@ -78,7 +78,7 @@ exports.postTeam = async (req, res) => {
   let myfile = req.file.originalname.split(".");
   const fileType = myfile[myfile.length - 1];
   const params = {
-    Bucket: "ecell-website",
+    Bucket: process.env.BUCKET_NAME,
     Key: `${uuid.v4()}.${fileType}`,
     Body: img,
   };
@@ -112,7 +112,7 @@ exports.postEvent = async (req, res) => {
   let myfile = req.file.originalname.split(".");
   const fileType = myfile[myfile.length - 1];
   const params = {
-    Bucket: "ecell-website",
+    Bucket: process.env.BUCKET_NAME,
     Key: `${uuid.v4()}.${fileType}`,
     Body: img,
   };
@@ -145,7 +145,7 @@ exports.postAuth = async (req, res) => {
   let myfile = req.file.originalname.split(".");
   const fileType = myfile[myfile.length - 1];
   const params = {
-    Bucket: "ecell-website",
+    Bucket: process.env.BUCKET_NAME,
     Key: `${uuid.v4()}.${fileType}`,
     Body: img,
   };
