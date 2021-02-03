@@ -10,7 +10,7 @@ export default function High() {
     <React.Fragment>
       <h1 className="high">Highlight Events</h1>
       <div className="highlight">
-        <Link
+        <a
           href="/events/601927ae11024a0017c59403"
           className="back"
           style={{ backgroundImage: `url(${img})` }}
@@ -19,17 +19,15 @@ export default function High() {
         >
           <div className="bg">
             <p>
-              Without Practicals and experiments, Collecting knowledge is like
-              learning swimming without stepping into waters.🏊‍♀ Here is your
-              next GREAT OPPORTUNITY! E-Cell NITH brings forth the maiden
-              edition of SIP (Start-up Internship Program) to help you connect
-              with various start-ups and reach out to them for industrial
-              exposure. So don’t miss this cause who knows this internship may
-              land you the affair of your dreams!
+              E-Cell NITH brings forth the maiden edition of SIP (Start-up
+              Internship Program) to help you connect with various start-ups and
+              reach out to them for industrial exposure. So don’t miss this
+              cause who knows this internship may land you the affair of your
+              dreams!
             </p>
           </div>
-        </Link>
-        <Link
+        </a>
+        <a
           href="/events/601929a711024a0017c59404"
           className="back"
           style={{ backgroundImage: `url(${img1})` }}
@@ -43,8 +41,8 @@ export default function High() {
               worth 5K.
             </p>
           </div>
-        </Link>
-        <Link
+        </a>
+        <a
           href="/events/60192bfd11024a0017c59405"
           className="back"
           style={{
@@ -62,7 +60,7 @@ export default function High() {
               chance.
             </p>
           </div>
-        </Link>
+        </a>
       </div>
     </React.Fragment>
   );
