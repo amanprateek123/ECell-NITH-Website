@@ -42,7 +42,9 @@ export default function Events(props) {
         <div className="cont">
           <h4> {event[0].eventName} </h4>
           <h5> {event[0].sub} </h5>
-          <i>Sponsored by :- {event[0].sponsor} </i>
+          {event[0].sponsor !== "No Sponsors" ? (
+            <i>Sponsored by :- {event[0].sponsor} </i>
+          ) : null}
           <p> Date: {event[0].date} </p>
           {new Date(event[0].date).getTime() > time ? (
             <Button className="btns1" variant="contained" color="inherit">
