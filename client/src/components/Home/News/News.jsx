@@ -51,12 +51,19 @@ export default function News() {
                         Read more
                       </a>
                       </span>*/}
-                    <span style={{marginLeft:'0.5em'}} >
+                    <span style={{ marginLeft: "0.5em" }}>
                       <img
                         src="https://upsee.nic.in/WebInfo/Images/newicon.gif"
                         style={{ width: "2em" }}
                       />
                     </span>
+                    {itm.link !== "/" ? (
+                      <span>
+                        <a href={itm.link} className="linker">
+                          Read More
+                        </a>
+                      </span>
+                    ) : null}
                   </p>
                 ))}
               </marquee>

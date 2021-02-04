@@ -1,85 +1,92 @@
-.news{
-    margin: 2em 0;
-    h1{
+.news {
+  margin: 2em 0;
+  h1 {
     margin: 40px 0;
-    font-family: 'Epilogue', sans-serif;
+    font-family: "Epilogue", sans-serif;
     font-weight: 600;
     text-align: center;
     text-transform: capitalize;
-    @media(max-width: 600px){
-        font-size: 30px;
+    @media (max-width: 600px) {
+      font-size: 30px;
     }
+  }
+  .news_sec {
+    display: flex;
+    width: 80%;
+    margin: 1em auto;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      width: 100%;
     }
-    .news_sec{
-        display: flex;
+    .imgs {
+      width: 60%;
+      margin: 0 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 600px) {
+        width: 100%;
+        margin: 0 0 1em 0;
+      }
+      img {
         width: 80%;
-        margin : 1em auto;
-        @media(max-width:600px){
-            flex-direction: column;
-            width: 100%;
-        }
-        .imgs{
-            width: 60%;
-            margin: 0 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @media(max-width:600px){
-                width: 100%;
-                margin: 0 0 1em 0;
-            }
-            img{
-                width: 80%;
-            }
-        }
-        .cont{
-            width: 50%;
-            margin: 0 1em;
-            @media(max-width:600px){
-                width: 90%;
-                margin: 1em auto;
-            }
-            .marker{
-                position: absolute;
-                margin-top: -26px;
-                background-color: skyblue;
-                color: #ffffff;
-                padding: 5px 10px;
-                font-size: 10px;
-                font-weight: 400;
-                font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
-                letter-spacing: 1px;
-                z-index: 1;
-                line-height: 26px;
-                margin-left: -10px;
-                box-shadow: 1px 1px 1px rgba(28, 39, 60, 0.16);
-                display: flex;
-            }
-            .marker::after{
-                content: '';
-                position: absolute;
-                bottom: -6px;
-                left: 0;
-                border-bottom: 7px solid #b4bdce;
-                border-left: 7px solid transparent;
-                border-right: 7px solid transparent;
-                transform: rotate(45deg);
-            }
-            .box{
-                margin: 0 1em;
-                padding: 20px;
-                margin-bottom: 15px;
-                min-height: 180px;
-                height: 100%;
-                border: 1px solid #ddd;
-                box-shadow: 5px 5px 5px rgba(0,0,0,.2);
-                p{
-                    font-size: 15px;
-                    color: black;
-                    font-weight: bold;
-                }
-            }
-        }
-
+      }
     }
+    .cont {
+      width: 50%;
+      margin: 0 1em;
+      @media (max-width: 600px) {
+        width: 90%;
+        margin: 1em auto;
+      }
+      .marker {
+        position: absolute;
+        margin-top: -26px;
+        background-color: skyblue;
+        color: #ffffff;
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: 400;
+        font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto,
+          sans-serif;
+        letter-spacing: 1px;
+        z-index: 1;
+        line-height: 26px;
+        margin-left: -10px;
+        box-shadow: 1px 1px 1px rgba(28, 39, 60, 0.16);
+        display: flex;
+      }
+      .marker::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        border-bottom: 7px solid #b4bdce;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        transform: rotate(45deg);
+      }
+      .box {
+        margin: 0 1em;
+        padding: 20px;
+        margin-bottom: 15px;
+        min-height: 180px;
+        height: 100%;
+        border: 1px solid #ddd;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        p {
+          font-size: 15px;
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.linker {
+  color: skyblue;
+}
+.linker:hover {
+  color: skyblue;
 }

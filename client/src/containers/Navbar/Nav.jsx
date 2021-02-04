@@ -263,15 +263,6 @@ export default function ButtonAppBar(props) {
               <NavLink
                 className="menu_list"
                 activeClassName="active_list"
-                to="/blog"
-              >
-                Blogs
-              </NavLink>
-            </Typography>
-            <Typography variant="h6" className="title">
-              <NavLink
-                className="menu_list"
-                activeClassName="active_list"
                 to="/partner"
               >
                 Partners
@@ -283,7 +274,7 @@ export default function ButtonAppBar(props) {
                 activeClassName="active_list"
                 to="/team"
               >
-                Teams
+                Our Team
               </NavLink>
             </Typography>
             <Typography variant="h6" className="title">
@@ -293,6 +284,15 @@ export default function ButtonAppBar(props) {
                 to="/gallery"
               >
                 Gallery
+              </NavLink>
+            </Typography>
+            <Typography variant="h6" className="title">
+              <NavLink
+                className="menu_list"
+                activeClassName="active_list"
+                to="/blog"
+              >
+                Blogs
               </NavLink>
             </Typography>
             <Typography variant="h6" className="title">
