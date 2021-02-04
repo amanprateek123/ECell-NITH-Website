@@ -46,7 +46,9 @@ export default function Events(props) {
           <p> Date: {event[0].date} </p>
           {new Date(event[0].date).getTime() > time ? (
             <Button className="btns1" variant="contained" color="inherit">
-              Register Now
+              <a href="https://forms.gle/6zDC7YCmiYVifdGh6" target="blank">
+                Register Now
+              </a>
             </Button>
           ) : (
             <p style={{ color: "red", fontWeight: "bold", margin: "3em 0" }}>
