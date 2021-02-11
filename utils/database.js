@@ -1,8 +1,14 @@
-const mongoose = require('mongoose')
-const connection = process.env.mongo_Url || "mongodb://127.0.0.1:27017/E-Cell-NITH"
+const mongoose = require("mongoose");
+const connection =
+  "mongodb+srv://ecellnith:Aman123@@cluster0.px0yn.mongodb.net/test";
 
-mongoose.connect(connection,{useNewUrlParser:true,useCreateIndex:'true',useFindAndModify:false,useUnifiedTopology:true})
+mongoose.connect(connection, {
+  useNewUrlParser: true,
+  useCreateIndex: "true",
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
 
-mongoose.connection.on('connected',()=>{
-    console.log("connected to database")
-})
+mongoose.connection.on("connected", () => {
+  console.log("connected to database");
+});
