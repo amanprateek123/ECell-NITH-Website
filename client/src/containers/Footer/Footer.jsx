@@ -8,12 +8,16 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import img from './ecell.png'
 
 export default function Footer() {
   return (
     <div id="contact">
       <div className="container mx-auto foot">
-        <div className="logo_foot"></div>
+        <div
+          className="logo_foot"
+          style={{ backgroundImage: `url(${img})` }}
+        ></div>
         <div className="contact" id="contact">
           <h4>Contact Us</h4>
           <div className="det">

@@ -23,6 +23,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import logo from './ecell.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -92,7 +93,7 @@ export default function ButtonAppBar(props) {
             }}
           >
             <img
-              src="https://ecellnith.github.io/Ecell/pp.png"
+              src={logo}
               style={{ width: "60%" }}
             />
           </ListItemIcon>
@@ -238,7 +239,7 @@ export default function ButtonAppBar(props) {
           </Drawer>
           <div className="nav_bar">
             <div className="logo">
-              <img src="https://ecellnith.github.io/Ecell/pp.png" />
+              <img src={logo} />
             </div>
             <Typography variant="h6" className="title">
               <NavLink
