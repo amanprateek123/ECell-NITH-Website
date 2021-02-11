@@ -48,7 +48,7 @@ export default function Events(props) {
           <p> Date: {event[0].date} </p>
           {new Date(event[0].date).getTime() > time ? (
             <Button className="btns1" variant="contained" color="inherit">
-              <a href="https://forms.gle/6zDC7YCmiYVifdGh6" target="blank">
+              <a href="https://forms.gle/6LexKJnQX5WXgJfj9" target="blank">
                 Register Now
               </a>
             </Button>
