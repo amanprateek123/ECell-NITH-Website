@@ -5,7 +5,7 @@ export default function Authority() {
   const [auth, setAuth] = useState([]);
 
   useEffect(() => {
-    fetch("/api/auth")
+    fetch("/api/api/auth")
       .then((res) => res.json())
       .then((res) => {
         setAuth(res);

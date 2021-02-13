@@ -11,7 +11,7 @@ export default function Initiatives() {
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    fetch("/api/initiative")
+    fetch("/api/api/initiative")
       .then((res) => res.json())
       .then((res) => {
         setEvent(res);
