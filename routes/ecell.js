@@ -8,7 +8,7 @@ router.get("/api/gal", ctrl.getGal);
 router.get("/api/team", ctrl.getTeam);
 router.get("/api/initiative", ctrl.getEvent);
 router.get("/api/initiatives", ctrl.getEventInd);
-router.get("/api/auth", ctrl.getAuth);
+router.get("/api/api/auth", ctrl.getAuth);
 router.get("/api/partner", ctrl.getPartner);
 router.post("/api/getInTouch", ctrl.getInTouch);
 router.get("/api/blogs", ctrl.getBlog);
