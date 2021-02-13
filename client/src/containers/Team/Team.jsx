@@ -9,7 +9,7 @@ import gif from "../../loading.gif";
 export default function Team() {
   const [team, setTeam] = useState([]);
   useEffect(() => {
-    fetch("/api/api/team")
+    fetch("/api/team")
       .then((res) => res.json())
       .then((res) => {
         setTeam(res);

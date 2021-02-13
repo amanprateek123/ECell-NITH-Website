@@ -6,7 +6,7 @@ import gif from "./animation.gif";
 export default function News() {
   const [news, setNews] = useState([]);
   useEffect(() => {
-    fetch("/api/api/news")
+    fetch("/api/news")
       .then((res) => res.json())
       .then((res) => {
         setNews(res);

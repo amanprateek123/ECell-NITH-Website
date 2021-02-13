@@ -10,7 +10,7 @@ function typedArrayToURL(typedArray, mimeType) {
 export default function Galleries() {
   const [img, setImg] = useState([]);
   useEffect(() => {
-    fetch("/api/api/gallery")
+    fetch("/api/gallery")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
