@@ -7,7 +7,7 @@ export default function Events(props) {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/api/initiatives?id=${props.match.params.id}`)
+    fetch(`/api/initiatives?id=${props.match.params.id}`)
       .then((res) => res.json())
       .then((res) => {
         setEvent(res);
