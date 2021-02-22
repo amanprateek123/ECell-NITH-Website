@@ -14,7 +14,9 @@ export default function Initiatives() {
     fetch("/api/initiative")
       .then((res) => res.json())
       .then((res) => {
-        setEvent(res);
+        let a = [...res]
+        let b = a.reverse()
+        setEvent(b);
       });
   }, []);
 
@@ -35,22 +37,7 @@ export default function Initiatives() {
       <h1 className="heads">Our Initiatives</h1>
       {event.length ? (
         <div className="containers1">
-          <div className="b1 box">
-            <a
-              href={`/events/${event[0]._id}`}
-              style={{ textDecoration: "none" }}
-            >
-              <div
-                className="cont"
-                style={{ backgroundImage: `url(${event[0].image})` }}
-              >
-                <div className="eve">
-                  <h2> {event[0].eventName} </h2>
-                </div>
-              </div>
-            </a>
-          </div>
-          {event.slice(1).map((item) => (
+          {event.map((item) => (
             <div className="b2 box" key={item._id}>
               <a
                 href={`/events/${item._id}`}
