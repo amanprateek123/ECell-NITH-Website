@@ -1,6 +1,6 @@
 .register {
   width: 100%;
-  background-image: url("https://absoluteinternship.com/wp-content/uploads/architecture-hdr.jpg");
+  background-image: url("https://www.taxamicus.com/wp-content/uploads/2017/02/maxresdefault_yJhJfNe.jpg");
   background-color: rgba(0, 0, 0, 0.1);
   background-position: center;
   background-repeat: no-repeat;
@@ -38,6 +38,10 @@
     }
     p {
       font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      width: 90%;
+      margin: 0 !important;
     }
   }
 }
@@ -81,17 +85,20 @@
     border-radius: 20px !important;
     width: 15%;
     font-weight: bold;
+    @media (max-width: 600px) {
+      width: 30%;
+    }
   }
 }
 
-.chip{
+.chip {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0.5em;
   margin: 1em;
-  .ch{
+  .ch {
     margin: 0.5em;
   }
 }

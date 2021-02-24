@@ -7,6 +7,15 @@ const Partner = require("../models/partner");
 const Blog = require("../models/blogs");
 const News = require("../models/News");
 const Eg = require("../models/eg");
+const Sip = require("../models/sip");
+const AWS = require("aws-sdk");
+const uuid = require("uuid");
+const path = require("path");
+
+const s3 = new AWS.S3({
+  accessKeyId: "AKIAIN3XQQQ67LDMNNOA",
+  secretAccessKey: "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",
+});
 
 //gallery
 exports.getGallery = async (req, res) => {
@@ -98,5 +107,52 @@ exports.getNews = async (req, res) => {
     res.json(news);
   } catch (e) {
     res.status(404).send({ error: e.message });
+  }
+};
+
+exports.postSIP = async (req, res) => {
+  try {
+    let d = JSON.parse(req.body.sip);
+    let user = d.data;
+    let u = await Sip.find({ email: user.email });
+    if (u.length > 0) {
+      throw new Error("You had already registered");
+    }
+    if (path.extname(req.file.originalname) !== ".pdf") {
+      throw new Error("Only pdfs are allowed");
+    }
+    let prod = req.file.buffer;
+    let myfile = req.file.originalname.split(".");
+    const fileType = myfile[myfile.length - 1];
+    const params = {
+      Bucket: "ecell-website",
+      Key: `${uuid.v4()}.${fileType}`,
+      Body: prod,
+    };
+    const sip = new Sip();
+    let comp = d.companies;
+    sip.email = user.email;
+    sip.name = user.name;
+    sip.contact = user.contact;
+    sip.roll = user.roll;
+    sip.course = user.course;
+    sip.branch = user.branch;
+    sip.year = user.year;
+    sip.companies = [...comp];
+    res.json({
+      status: 200,
+      message: "Your form is successfully submitted",
+    });
+    s3.upload(params, async (er, data) => {
+      if (er) {
+        res.json(er);
+      } else {
+        let url = `${data.Location}`;
+        sip.cv = url;
+        await sip.save();
+      }
+    });
+  } catch (e) {
+    res.json({ status: 401, message: e.message });
   }
 };

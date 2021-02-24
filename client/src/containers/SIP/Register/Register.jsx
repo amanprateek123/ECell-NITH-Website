@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./Register.scss";
-import { Button, TextField, Chip } from "@material-ui/core";
+import { Button, TextField, Chip, Snackbar } from "@material-ui/core";
+import MuiAlert from "@material-ui/lab/Alert";
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 export default function Register() {
   const [tab, setTab] = useState(1);
@@ -15,8 +20,8 @@ export default function Register() {
     branch: "",
     year: "",
   };
-
-  const [status,setStatus] = useState({})
+  const [open, setOpen] = React.useState(false);
+  const [status, setStatus] = useState({});
 
   const [data, setData] = useState(schema);
 
@@ -41,17 +46,29 @@ export default function Register() {
   };
   console.log(data);
 
-  const postEvent = () => {
+  const postSIP = (e) => {
+    e.preventDefault();
     const pic = document.getElementById("image").files;
     var formData = new FormData();
     formData.append("sip", pic[0]);
-    formData.append("event", JSON.stringify(data));
+    formData.append(
+      "sip",
+      JSON.stringify({ data: data, companies: companies })
+    );
     return fetch("/api/sip", {
       method: "POST",
       body: formData,
     })
       .then((res) => res.json())
-      .then((res) => setStatus(res))
+      .then((res) => {
+        setStatus(res);
+        setOpen(true);
+        if (res.status === 200) {
+          setTimeout(() => {
+            window.location = "/sip/register";
+          }, 4000);
+        }
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -106,7 +123,7 @@ export default function Register() {
             <div>
               <h4>Course</h4>
               <select name="course" onChange={handleChange}>
-                <option value="" >Select Course</option>
+                <option value="">Select Course</option>
                 <option> B.Tech </option>
                 <option> M.Tech </option>
                 <option> B.Arch </option>
@@ -117,7 +134,7 @@ export default function Register() {
             <div>
               <h4>Branch</h4>
               <select name="branch" onChange={handleChange}>
-                <option value="" >Select Branch</option>
+                <option value="">Select Branch</option>
                 <option>Computer Science and Engineering</option>
                 <option>Electronics and Communication Engineering</option>
                 <option>Mechanical Engineering</option>
@@ -130,7 +147,7 @@ export default function Register() {
             <div>
               <h4>Year</h4>
               <select name="year" onChange={handleChange}>
-                <option value="" >Select Year</option>
+                <option value="">Select Year</option>
                 <option> 1st Year </option>
                 <option> 2nd Year </option>
                 <option> 3rd Year </option>
@@ -208,7 +225,7 @@ export default function Register() {
           <div className="section1">
             <div style={{ gridColumn: "1/3" }}>
               <h4>Upload your CV</h4>
-              <input type="file" id="image" />
+              <input type="file" id="image" required />
             </div>
           </div>
           <div className="btns_31">
@@ -235,14 +252,23 @@ export default function Register() {
           <form
             encType="multipart/form-data"
             className="frm"
-            onSubmit={(e) => {
-              e.preventDefault();
-              console.log("hi");
-            }}
+            onSubmit={postSIP}
           >
             <h2>Startup Internship Program 2k21</h2>
             {tab === 1 ? form1 : tab === 2 ? form2 : tab === 3 ? form3 : null}
           </form>
+          <Snackbar
+            open={open}
+            autoHideDuration={3000}
+            onClose={() => setOpen(false)}
+          >
+            <Alert
+              onClose={() => setOpen(false)}
+              severity={status.status === 200 ? "success" : "error"}
+            >
+              {status.message}
+            </Alert>
+          </Snackbar>
         </div>
       </div>
     </div>

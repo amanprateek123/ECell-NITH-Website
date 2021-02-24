@@ -1,5 +1,6 @@
 const express = require("express");
 const ctrl = require("../controllers/ecell");
+const multer = require("../middleware/multer1");
 
 const router = new express.Router();
 
@@ -13,5 +14,6 @@ router.get("/api/partner", ctrl.getPartner);
 router.post("/api/getInTouch", ctrl.getInTouch);
 router.get("/api/blogs", ctrl.getBlog);
 router.get("/api/news", ctrl.getNews);
+router.post("/api/sip", multer.single("sip"), ctrl.postSIP);
 
 module.exports = router;
