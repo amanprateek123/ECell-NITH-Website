@@ -101,18 +101,16 @@
 }
 
 .gets {
-  color: black !important;
+  color: #01a8f3 !important;
   padding: 0.5em !important;
   width: 10em;
   font-size: 18px !important;
   text-transform: none !important;
   cursor: pointer;
-  font-weight: bold;
-  font-family: "eras itc";
+  font-weight: 1000;
+  font-family: sans-serif;
 }
-.gets:hover {
-  color: #01a8f3 !important;
-}
+
 .video {
   position: absolute;
   right: 0;

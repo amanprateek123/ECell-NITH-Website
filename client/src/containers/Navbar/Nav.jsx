@@ -23,7 +23,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import logo from './ecell.png'
+import logo from "./ecell.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -92,10 +92,7 @@ export default function ButtonAppBar(props) {
               alignItems: "center",
             }}
           >
-            <img
-              src={logo}
-              style={{ width: "60%" }}
-            />
+            <img src={logo} style={{ width: "60%" }} />
           </ListItemIcon>
         </ListItem>
         <Divider />
@@ -106,6 +103,16 @@ export default function ButtonAppBar(props) {
             to="/"
           >
             <ListItemText primary="Home" />
+          </NavLink>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <NavLink
+            onClick={toggleDrawer("left", false)}
+            style={{ textDecoration: "none", color: "black" }}
+            to="/sip"
+          >
+            <ListItemText primary="SIP" />
           </NavLink>
         </ListItem>
         <Divider />
@@ -238,9 +245,9 @@ export default function ButtonAppBar(props) {
             {draw()}
           </Drawer>
           <div className="nav_bar">
-            <div className="logo">
+            <NavLink to="/" className="logo">
               <img src={logo} />
-            </div>
+            </NavLink>
             <Typography variant="h6" className="title">
               <NavLink
                 activeClassName="active_list"
@@ -249,6 +256,16 @@ export default function ButtonAppBar(props) {
                 exact
               >
                 Home
+              </NavLink>
+            </Typography>
+            <Typography variant="h6" className="title">
+              <NavLink
+                activeClassName="active_list"
+                className="menu_list"
+                to="/sip"
+                exact
+              >
+                SIP
               </NavLink>
             </Typography>
             <Typography variant="h6" className="title">
