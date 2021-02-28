@@ -29,7 +29,7 @@
   width: 80%;
   margin: 0 auto;
   animation: glitch-skew 1s infinite linear alternate-reverse;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 3.5em;
     width: 90%;
   }
@@ -104,7 +104,7 @@
   color: #c6e2ff;
   -webkit-animation: neon 0.08s ease-in-out infinite alternate;
   animation: neon 0.08s ease-in-out infinite alternate;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 2em;
   }
 }
@@ -117,7 +117,18 @@
   flex-flow: column;
   .href1 {
     text-decoration: none;
+    p {
+      font-size: 16px;
+      color: white;
+    }
   }
+}
+
+.camp {
+  color: #c6e2ff;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 12px;
 }
 
 @-webkit-keyframes neon {

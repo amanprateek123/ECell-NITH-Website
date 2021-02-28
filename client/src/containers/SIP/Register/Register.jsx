@@ -10,7 +10,32 @@ function Alert(props) {
 export default function Register() {
   const [tab, setTab] = useState(1);
   const [companies, setCompanies] = useState([]);
-  let a = ["Google", "Amazon", "Microsoft", "IBM", "Infotech"];
+  let a = [
+    "StackFusion Pvt. Ltd.",
+    "The Tech Bridge",
+    "CareerNaksha",
+    "UCFER",
+    "XcitEducation",
+    "MIDAAS TELESOFT Private Limited",
+    "WEBMOBI",
+    "AITRA Development Pvt. Ltd.",
+    "TESTRIGHT NANOSYSTEMS Pvt. Ltd.",
+    "SPYNE.ai",
+    "Gateway Software Solutions Pvt. Ltd.",
+    "Questa Software Systems Pvt. Ltd.",
+    "KAN Innovations Pvt. Ltd.",
+    "BLUE",
+    "INTERNATIONAL ORGANISATION OF SOFTWARE DEVELOPERS",
+    "Make me builder",
+    "INFOZZLE SOFTWARE SOLUTIONS Pvt Ltd",
+    "DOXPRO ROBOTICS Pvt Ltd",
+    "eWARDS",
+    "DIALaBANK",
+    "EXTENSION TECHNOLOGIES",
+    "MentoMeet",
+    "ZUV Foundation",
+    "MYCAPTAIN",
+  ];
   const schema = {
     email: "",
     name: "",
@@ -172,7 +197,14 @@ export default function Register() {
         You can apply to a maximum of 3 companies as per the policies of the
         program. Kindly select the companies of your preference accordingly. Do
         make sure that you meet the company criterias and requirements as
-        mentioned on the website.
+        mentioned on the website. You can check the company list{" "}
+        <a
+          href="https://ecell-website.s3.ap-south-1.amazonaws.com/sip_company_details.pdf"
+          target="blank"
+        >
+          here
+        </a>{" "}
+        .
       </p>
       <div className="form_fill">
         <div className="forum">

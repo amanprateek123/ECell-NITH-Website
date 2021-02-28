@@ -27,16 +27,24 @@ export default function SIP() {
             facets of a start-up organization.
           </p>
         </div>
-        {/*<div class="body3">
-          <a href="#" className="href1">
+        {/*<div className="coming">Coming Soon. Stay Tuned !</div>
+         */}
+        <div class="body3">
+          <a href="/sip/register" className="href1">
             <p>
-              <span class="bg"></span>
-              <span class="base"></span>
-              <span class="text">REGISTER NOW</span>
+              <span>REGISTER NOW</span>
             </p>
           </a>
-  </div>*/}
-        <div className="coming" >Coming Soon. Stay Tuned !</div>
+        </div>
+        <div className="camp">
+          You can check the company list{" "}
+          <a
+            href="https://ecell-website.s3.ap-south-1.amazonaws.com/sip_company_details.pdf"
+            target="blank"
+          >
+            here
+          </a>
+        </div>
       </div>
     </div>
   );
