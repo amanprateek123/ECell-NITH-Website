@@ -160,6 +160,7 @@ export default function Register() {
               <h4>Branch</h4>
               <select name="branch" onChange={handleChange}>
                 <option value="">Select Branch</option>
+                <option>Architecture</option>
                 <option>Computer Science and Engineering</option>
                 <option>Electronics and Communication Engineering</option>
                 <option>Mechanical Engineering</option>
