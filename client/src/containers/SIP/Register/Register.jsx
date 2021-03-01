@@ -199,7 +199,7 @@ export default function Register() {
         make sure that you meet the company criterias and requirements as
         mentioned on the website. You can check the company list{" "}
         <a
-          href="https://ecell-website.s3.ap-south-1.amazonaws.com/sip_company_details.pdf"
+          href="https://ecell-website.s3.ap-south-1.amazonaws.com/SIP+Company+details+%26+Guidelines.pdf"
           target="blank"
         >
           here

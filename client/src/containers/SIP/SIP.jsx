@@ -39,7 +39,7 @@ export default function SIP() {
         <div className="camp">
           You can check the company list{" "}
           <a
-            href="https://ecell-website.s3.ap-south-1.amazonaws.com/sip_company_details.pdf"
+            href="https://ecell-website.s3.ap-south-1.amazonaws.com/SIP+Company+details+%26+Guidelines.pdf"
             target="blank"
           >
             here

@@ -13,8 +13,8 @@ const uuid = require("uuid");
 const path = require("path");
 
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAIN3XQQQ67LDMNNOA",
-  secretAccessKey: "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",
+  accessKeyId: "AKIA5U7BMGANEEE7TNZM",
+  secretAccessKey: "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",
 });
 
 //gallery
@@ -114,10 +114,18 @@ exports.postSIP = async (req, res) => {
   try {
     let d = JSON.parse(req.body.sip);
     let user = d.data;
+    Object.keys(user).map((key) => {
+      if (user[key] === "") {
+        throw new Error(`Please fill the ${key} first`);
+      }
+    });
+
     let u = await Sip.find({ email: user.email });
+
     if (u.length > 0) {
       throw new Error("You had already registered");
     }
+
     if (path.extname(req.file.originalname) !== ".pdf") {
       throw new Error("Only pdfs are allowed");
     }
@@ -125,7 +133,7 @@ exports.postSIP = async (req, res) => {
     let myfile = req.file.originalname.split(".");
     const fileType = myfile[myfile.length - 1];
     const params = {
-      Bucket: "ecell-website",
+      Bucket: "ecell-bucket",
       Key: `${uuid.v4()}.${fileType}`,
       Body: prod,
     };
