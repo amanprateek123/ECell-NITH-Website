@@ -167,6 +167,8 @@ export default function Register() {
                 <option>Chemical Engineering</option>
                 <option>Civil Engineering</option>
                 <option>Electrical Engineering</option>
+                <option>Maths and Computing</option>
+                <option>Physics</option>
                 <option>Material Science and Engineering</option>
               </select>
             </div>
