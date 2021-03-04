@@ -161,6 +161,7 @@ export default function Register() {
               <select name="branch" onChange={handleChange}>
                 <option value="">Select Branch</option>
                 <option>Architecture</option>
+                <option>Management Field(For MBA Students)</option>
                 <option>Computer Science and Engineering</option>
                 <option>Electronics and Communication Engineering</option>
                 <option>Mechanical Engineering</option>
