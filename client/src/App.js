@@ -41,7 +41,7 @@ class App extends Component {
           <Route path="/partner" component={Partners} />
           <Route path="/blog" component={Blogs} />
           <Route path="/events/:id" component={Events} />
-          <Route path="/sip/register" component={Register} />
+          {/*<Route path="/sip/register" component={Register} />*/}
           <Route component={E404} />
         </Switch>
       </React.Fragment>

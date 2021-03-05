@@ -31,9 +31,7 @@ export default function SIP() {
          */}
         <div class="body3">
           <a href="/sip/register" className="href1">
-            <p>
-              <span>REGISTER NOW</span>
-            </p>
+            <p>Registration is closed...!</p>
           </a>
         </div>
         <div className="camp">
