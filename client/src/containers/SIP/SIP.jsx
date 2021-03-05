@@ -30,7 +30,7 @@ export default function SIP() {
         {/*<div className="coming">Coming Soon. Stay Tuned !</div>
          */}
         <div class="body3">
-          <a href="/sip/register" className="href1">
+          <a className="href1">
             <p>Registration is closed...!</p>
           </a>
         </div>
