@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./News.scss";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import gif from "./animation.gif";
+import gif1 from "./new.gif";
 
 export default function News() {
   const [news, setNews] = useState([]);
@@ -52,10 +53,7 @@ export default function News() {
                       </a>
                       </span>*/}
                     <span style={{ marginLeft: "0.5em" }}>
-                      <img
-                        src="https://upsee.nic.in/WebInfo/Images/newicon.gif"
-                        style={{ width: "2em" }}
-                      />
+                      <img src={gif1} style={{ width: "2em" }} />
                     </span>
                     {itm.link !== "/" ? (
                       <span>

@@ -31,7 +31,24 @@ export default function SIP() {
          */}
         <div class="body3">
           <a className="href1">
-            <p>Registration is closed...!</p>
+            <p>
+              After the meticulous round of interviews, we are very ecstatic to
+              announce the final results and wish a big Heartfelt
+              congratulations to all the new Selected student for Internship.
+              <br />
+              Those who were not able to qualify need not lose hope as E-cell
+              NIT Hamirpur will strive to bring more opportunity to you! We hope
+              to see you next Year at SIP.
+            </p>
+          </a>
+        </div>
+        <div className="camp">
+          You can check the result{" "}
+          <a
+            href="https://ecell-bucket.s3.ap-south-1.amazonaws.com/SIP+Selected+Students.pdf"
+            target="blank"
+          >
+            here
           </a>
         </div>
         <div className="camp">
