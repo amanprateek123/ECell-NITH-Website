@@ -12,16 +12,18 @@ export default function Main() {
       behavior: "smooth",
     });
   }
-  const [src, setSrc] = React.useState(vid1);
+  const [src, setSrc] = React.useState(
+    "https://ecell-bucket.s3.ap-south-1.amazonaws.com/front.mp4"
+  );
   useEffect(() => {
     if (window.innerWidth < 600) {
-      setSrc(vid2);
+      setSrc("https://ecell-bucket.s3.ap-south-1.amazonaws.com/front_mob.mp4");
     } else {
-      setSrc(vid1);
+      setSrc("https://ecell-bucket.s3.ap-south-1.amazonaws.com/front.mp4");
     }
   }, []);
   return (
-    <div className="vi" style={{height:window.screen.height}}  >
+    <div className="vi">
       <video src={src} className="video" autoPlay loop muted />
       <div className="mainImgs">
         <div className="mainConts">
