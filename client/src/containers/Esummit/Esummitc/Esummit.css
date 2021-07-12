@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.logo2{
+animation: fade-in 2s;
+}
+
+
+.soon p{
+  color: #faf610;
+  
+  box-sizing: border-box;
+  width: 0ch;
+  outline: none;
+  padding-right: 5px;
+  text-decoration: none;
+  font-size: 2.2em;
+  overflow: hidden;
+  border-right: 3px solid #faf610;
+  white-space: nowrap;
+  animation: typetext 3s steps(13) infinite alternate;
+  font-family: 'Oswald', sans-serif;
+}
+#logo{
+    animation: line-fill 0.5s ease forwards 4.5s;
+   
+}
+#logo path:nth-child(1){
+stroke-dasharray:518 ;
+stroke-dashoffset: 518;
+animation: line-anim 4s ease forwards ;
+}
+#logo path:nth-child(2){
+    stroke-dasharray:186 ;
+    stroke-dashoffset: 186;
+    animation: line-anim 4s ease forwards ;
+}
+#logo path:nth-child(3){
+    stroke-dasharray:538 ;
+    stroke-dashoffset: 538;
+    animation: line-anim 4s ease forwards 0.3s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray:538 ;
+    stroke-dashoffset: 538;
+    animation: line-anim 4s ease forwards 0.6s ;
+}
+#logo path:nth-child(5){
+    stroke-dasharray:812 ;
+    stroke-dashoffset: 812;
+    animation: line-anim 4s ease forwards 0.9s ;
+}
+#logo path:nth-child(6){
+    stroke-dasharray:812 ;
+    stroke-dashoffset: 812;
+    animation: line-anim 4s ease forwards 1.2s ;
+}
+#logo path:nth-child(7){
+    stroke-dasharray:279 ;
+    stroke-dashoffset: 279;
+    animation: line-anim 4s ease forwards 1.5s ;
+}
+#logo path:nth-child(8){
+    stroke-dasharray:398 ;
+    stroke-dashoffset: 398;
+    animation: line-anim 4s ease forwards 1.8s ;
+}
+#logo path:nth-child(9){
+    stroke-dasharray:136 ;
+    stroke-dashoffset: 136;
+    animation: line-anim 4s ease forwards 2.1s ;
+}
+#logo path:nth-child(10){
+    stroke-dasharray:519 ;
+    stroke-dashoffset: 519;
+    animation: line-anim 4s ease forwards 2.4s ;
+}
+#logo path:nth-child(11){
+    stroke-dasharray:322 ;
+    stroke-dashoffset: 322;
+    animation: line-anim 4s ease forwards 2.7s ;
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes line-anim{
+     to{
+         stroke-dashoffset: 0;
+     }
+}
+
+@keyframes line-fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill:white;
+    }
+}
+@keyframes typetext {
+    from{
+     width: 0ch;
+    
+    }
+    to{
+      width: 13ch;
+      
+    }
+}
+
+ 
+@media screen and (max-width:400px) {
+    #logo{
+        width: 12em;
+        height: 5em;
+    }
+}

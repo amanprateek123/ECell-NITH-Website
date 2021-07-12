@@ -15,6 +15,7 @@ import Blogs from "./containers/Blogs/Blogs";
 import gif from "./ecell.gif";
 import SIP from "./containers/SIP/SIP";
 import Register from "./containers/SIP/Register/Register";
+import EHome from './containers/Esummit/EHome';
 
 class App extends Component {
   state = {
@@ -33,13 +34,15 @@ class App extends Component {
           <Route path="/" exact>
             <Home show={this.state.show} />
           </Route>
+          <Route path="/esummit" component={EHome} exact />
           <Route path="/sip" component={SIP} exact />
           <Route path="/initiatives" component={Initiatives} />
           <Route path="/admin" component={Admin} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/team" component={Team} />
           <Route path="/partner" component={Partners} />
-          <Route path="/blog" component={Blogs} />
+          <Route path="/blog" component={Blogs} /> 
+
           <Route path="/events/:id" component={Events} />
           {/*<Route path="/sip/register" component={Register} />*/}
           <Route component={E404} />
