@@ -122,7 +122,10 @@ animation: line-anim 4s ease forwards ;
  
 @media screen and (max-width:400px) {
     #logo{
-        width: 12em;
-        height: 5em;
+        width: 15em;
+        height: 7em;
+    }
+    .soon p{
+     font-size: 1.8em;
     }
 }

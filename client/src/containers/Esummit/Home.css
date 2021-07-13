@@ -29,7 +29,8 @@
   @media screen and (max-width:400px) {
     .container2{
       height: 100vh;
-      background-image: url('./p8.jpg');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.93)),
+      url("./p8.jpg");
       background-size: cover;
       background-position:center;
     background-repeat: no-repeat;
