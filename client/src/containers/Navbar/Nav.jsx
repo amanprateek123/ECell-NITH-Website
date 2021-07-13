@@ -120,6 +120,16 @@ export default function ButtonAppBar(props) {
           <NavLink
             onClick={toggleDrawer("left", false)}
             style={{ textDecoration: "none", color: "black" }}
+            to="/esummit"
+          >
+            <ListItemText primary="Esummit" />
+          </NavLink>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <NavLink
+            onClick={toggleDrawer("left", false)}
+            style={{ textDecoration: "none", color: "black" }}
             to="/initiatives"
           >
             <ListItemText primary="Initiatives" />
@@ -136,7 +146,7 @@ export default function ButtonAppBar(props) {
           </NavLink>
         </ListItem>
         <Divider />
-        <ListItem>
+        {/* <ListItem>
           <NavLink
             onClick={toggleDrawer("left", false)}
             style={{ textDecoration: "none", color: "black" }}
@@ -145,7 +155,7 @@ export default function ButtonAppBar(props) {
             <ListItemText primary="Blogs" />
           </NavLink>
         </ListItem>
-        <Divider />
+        <Divider /> */}
         <ListItem>
           <NavLink
             onClick={toggleDrawer("left", false)}
@@ -260,6 +270,15 @@ export default function ButtonAppBar(props) {
             </Typography>
             <Typography variant="h6" className="title">
               <NavLink
+                className="menu_list"
+                activeClassName="active_list"
+                to="/esummit"
+              >
+                Esummit
+              </NavLink>
+            </Typography>
+            <Typography variant="h6" className="title">
+              <NavLink
                 activeClassName="active_list"
                 className="menu_list"
                 to="/sip"
@@ -304,15 +323,14 @@ export default function ButtonAppBar(props) {
                 Gallery
               </NavLink>
             </Typography>
-            <Typography variant="h6" className="title">
+           {/*  <Typography variant="h6" className="title">
               <NavLink
                 className="menu_list"
                 activeClassName="active_list"
                 to="/blog"
               >
                 Blogs
-              </NavLink>
-            </Typography>
+  </NavLink>*/}
             <Typography variant="h6" className="title">
               <Link className="menu_list" to="/" onClick={hello}>
                 Contact Us

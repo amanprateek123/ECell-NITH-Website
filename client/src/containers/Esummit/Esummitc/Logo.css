@@ -1,0 +1,13 @@
+.logo1{
+    width: 45em;
+    height: 15em;
+    background-image: url(./p3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+@media screen and (max-width:400px) {
+    .logo1{
+        width: 15em;
+    }
+}

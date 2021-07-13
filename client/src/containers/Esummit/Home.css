@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .container2{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.93)),
+      url("./p8.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  .container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:0;
+  
+  
+  }
+  .logo{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  @media screen and (max-width:400px) {
+    .container2{
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.93)),
+      url("./p8.jpg");
+      background-size: cover;
+      background-position:center;
+    background-repeat: no-repeat;
+    }
+  }
