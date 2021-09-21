@@ -16,6 +16,7 @@ import gif from "./ecell.gif";
 import SIP from "./containers/SIP/SIP";
 import Register from "./containers/SIP/Register/Register";
 import EHome from './containers/Esummit/EHome';
+import CBTP from './containers/CBTP/CBTP';
 
 class App extends Component {
   state = {
@@ -36,6 +37,7 @@ class App extends Component {
           </Route>
           <Route path="/esummit" component={EHome} exact />
           <Route path="/sip" component={SIP} exact />
+          <Route path="/cbtp" component={CBTP} />
           <Route path="/initiatives" component={Initiatives} />
           <Route path="/admin" component={Admin} />
           <Route path="/gallery" component={Gallery} />

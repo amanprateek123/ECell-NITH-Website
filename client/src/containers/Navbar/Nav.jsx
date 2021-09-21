@@ -130,6 +130,16 @@ export default function ButtonAppBar(props) {
           <NavLink
             onClick={toggleDrawer("left", false)}
             style={{ textDecoration: "none", color: "black" }}
+            to="/cbtp"
+          >
+            <ListItemText primary="CBTP" />
+          </NavLink>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <NavLink
+            onClick={toggleDrawer("left", false)}
+            style={{ textDecoration: "none", color: "black" }}
             to="/initiatives"
           >
             <ListItemText primary="Initiatives" />
@@ -275,6 +285,15 @@ export default function ButtonAppBar(props) {
                 to="/esummit"
               >
                 Esummit
+              </NavLink>
+            </Typography>
+            <Typography variant="h6" className="title">
+              <NavLink
+                className="menu_list"
+                activeClassName="active_list"
+                to="/cbtp"
+              >
+                CBTP
               </NavLink>
             </Typography>
             <Typography variant="h6" className="title">
