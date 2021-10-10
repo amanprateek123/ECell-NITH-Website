@@ -116,7 +116,7 @@ export default function ButtonAppBar(props) {
           </NavLink>
         </ListItem>
         <Divider />
-        <ListItem>
+        {/* <ListItem>
           <NavLink
             onClick={toggleDrawer("left", false)}
             style={{ textDecoration: "none", color: "black" }}
@@ -125,7 +125,7 @@ export default function ButtonAppBar(props) {
             <ListItemText primary="Esummit" />
           </NavLink>
         </ListItem>
-        <Divider />
+        <Divider /> */}
         <ListItem>
           <NavLink
             onClick={toggleDrawer("left", false)}
@@ -278,7 +278,7 @@ export default function ButtonAppBar(props) {
                 Home
               </NavLink>
             </Typography>
-            <Typography variant="h6" className="title">
+           { /* <Typography variant="h6" className="title">
               <NavLink
                 className="menu_list"
                 activeClassName="active_list"
@@ -286,7 +286,7 @@ export default function ButtonAppBar(props) {
               >
                 Esummit
               </NavLink>
-            </Typography>
+            </Typography> */}
             <Typography variant="h6" className="title">
               <NavLink
                 className="menu_list"
