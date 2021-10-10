@@ -35,7 +35,7 @@ class App extends Component {
           <Route path="/" exact>
             <Home show={this.state.show} />
           </Route>
-          <Route path="/esummit" component={EHome} exact />
+          {/* <Route path="/esummit" component={EHome} exact /> */}
           <Route path="/sip" component={SIP} exact />
           <Route path="/cbtp" component={CBTP} />
           <Route path="/initiatives" component={Initiatives} />
