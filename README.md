@@ -16,7 +16,7 @@
     ```npm run client``` <br>
     ```npm run server```
 
-4. Also, start the mongoDB server for connecting server with database.
+4. Also, start the MongoDB server for connecting server with database.
 
 5. (OPTIONAL) To run the project in production mode. (as will be deployed) <br>
     - build the react project (in `E-Cell Website/client/`) <br>
