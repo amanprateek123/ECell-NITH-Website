@@ -9,7 +9,7 @@ const CBTP = () => {
         <div className="container4">
         <div className="heading1">COMPREHENSIVE  BUSINESS TRAINING  PROGRAM</div>
         <div className="tagline">A guide for " How to start a Start-Up"</div>
-        <div className="date"><div className="left"></div><div className="date1">Starting from 25th Sept, 2021</div> <div className="right"></div></div>
+        <div className="date"><div className="left"></div><div className="date1">Event Started on 25th Sept, 2021</div> <div className="right"></div></div>
         <Button/>
         </div>
         <div className="container5">
