@@ -13,8 +13,8 @@ const uuid = require("uuid");
 const path = require("path");
 
 const s3 = new AWS.S3({
-  accessKeyId: "AKIA5U7BMGANBHMVRTNA",
-  secretAccessKey: "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",
+  accessKeyId: "AKIAZKVCXIS6ETSOMFID",
+  secretAccessKey: "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",
 });
 
 //gallery
