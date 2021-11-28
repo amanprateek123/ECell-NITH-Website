@@ -23,7 +23,7 @@ export default function Team() {
     setArray(arr);
   };
   useEffect(() => {
-    handler(0, "2020");
+    handler(0, "2021");
   }, [team]);
 
   return (
@@ -32,21 +32,27 @@ export default function Team() {
         <h1 className="team_head">E-Cell Team</h1>
         <div className="alumni">
           <div className="year">
-            <div
-              onClick={() => handler(0, "2020")}
+          <div
+              onClick={() => handler(0, "2021")}
               className={tab === 0 ? "tab" : ""}
             >
               Current Year
             </div>
             <div
-              onClick={() => handler(1, "2019")}
-              className={tab === 1 ? "tab" : ""}
+              onClick={() => handler(1, "2020")}
+              className={tab === 1? "tab" : ""}
+            >
+              2020-2021
+            </div>
+            <div
+              onClick={() => handler(2, "2019")}
+              className={tab === 2 ? "tab" : ""}
             >
               2019-2020
             </div>
             <div
-              onClick={() => handler(2, "2018")}
-              className={tab === 2 ? "tab" : ""}
+              onClick={() => handler(3, "2018")}
+              className={tab === 3 ? "tab" : ""}
             >
               2018-2019
             </div>
