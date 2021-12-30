@@ -49,6 +49,12 @@
         }
     }
 }
+.auth .faculty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .para{
     font-size: 15px;
 }
