@@ -25,7 +25,7 @@ export default function Authority() {
             <p className="para">{auth[0].description}</p>
           </div>
         </div>
-        <div className="div" data-aos="flip-left" data-aos-duration="1500">
+        {/* <div className="div" data-aos="flip-left" data-aos-duration="1500">
           <img src={auth[1].image} />
           <div>
             <h4>{auth[1].name}</h4>
@@ -33,8 +33,8 @@ export default function Authority() {
               {auth[1].designation}
             </p>
             <p className="para">{auth[1].description}</p>
-          </div>
-        </div>
+          </div> 
+        </div> */}
       </div>
     </div>
   ) : null;
