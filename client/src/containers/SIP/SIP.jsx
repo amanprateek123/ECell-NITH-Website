@@ -6,8 +6,8 @@ export default function SIP() {
     <div className="sip_1">
       <div className="contain1">
         <div id="wrapper">
-          <h1 class="glitch" data-text="SIP 2021">
-            SIP 2021
+          <h1 class="glitch" data-text="SIP 2022">
+            SIP 2022
           </h1>
         </div>
         <div class="sign body">
@@ -27,9 +27,9 @@ export default function SIP() {
             facets of a start-up organization.
           </p>
         </div>
-        {/*<div className="coming">Coming Soon. Stay Tuned !</div>
-         */}
-        <div class="body3">
+      <div className="coming">Coming Soon. Stay Tuned !</div>
+         
+       {/*  <div class="body3">
           <a className="href1">
             <p>
               After the meticulous round of interviews, we are very ecstatic to
@@ -59,7 +59,7 @@ export default function SIP() {
           >
             here
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
