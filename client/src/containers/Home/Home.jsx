@@ -13,6 +13,7 @@ import { useEffect } from 'react'
 import gif from '../../ecell.gif'
 import Accompolishments from '../../components/Home/Accomplishment/Accomplishments'
 
+
 export default function Home(props) {
   const [cls,setCls] = React.useState('none')
   const listenScrollEvent = e => {
@@ -46,6 +47,7 @@ export default function Home(props) {
           <Gallery/>
           <GIT/>
           <Footer/>
+          
         </div>}
         </React.Fragment>
     )
