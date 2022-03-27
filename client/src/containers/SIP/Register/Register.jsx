@@ -11,30 +11,31 @@ export default function Register() {
   const [tab, setTab] = useState(1);
   const [companies, setCompanies] = useState([]);
   let a = [
-    "StackFusion Pvt. Ltd.",
-    "The Tech Bridge",
-    "CareerNaksha",
+    "Aekatr Technology and Services Pvt. Ltd.",
+    "HANMUN LLP",
+    "Educase India",
+    "Webmobi",
+    "Egiyok",
+    "AiBorne Tech",
+    "Stackfusion Private Limited",
+    "Housewise",
+    "MyCaptain (The Climber)",
+    "Midaas Telesoft Private Limited",
     "UCFER",
-    "XcitEducation",
-    "MIDAAS TELESOFT Private Limited",
-    "WEBMOBI",
-    "AITRA Development Pvt. Ltd.",
-    "TESTRIGHT NANOSYSTEMS Pvt. Ltd.",
-    "SPYNE.ai",
-    "Gateway Software Solutions Pvt. Ltd.",
-    "Questa Software Systems Pvt. Ltd.",
-    "KAN Innovations Pvt. Ltd.",
-    "BLUE",
-    "INTERNATIONAL ORGANISATION OF SOFTWARE DEVELOPERS",
-    "Make me builder",
-    "INFOZZLE SOFTWARE SOLUTIONS Pvt Ltd",
-    "DOXPRO ROBOTICS Pvt Ltd",
-    "eWARDS",
-    "DIALaBANK",
-    "EXTENSION TECHNOLOGIES",
-    "MentoMeet",
-    "ZUV Foundation",
-    "MYCAPTAIN",
+    "Zuv Foundation ",
+    "Skillvalley",
+    "DotPe Pvt. Ltd.",
+    "Kool Pack Allied Industry",
+    "Make Me Builder ",
+    "SkilloVilla Technologies Pvt Ltd",
+    "Fashionous",
+    "Stealth Technocrats Private Limited",
+    "Toroid Technologies Pvt Ltd ",
+    "Infra Ranking",
+    "Marwari Catalysts ",
+    "MentoMeet-1:1 Mentorship Platform",
+    "Xciteducation Worldwide",
+    "Medtips "
   ];
   const schema = {
     email: "",
@@ -168,8 +169,8 @@ export default function Register() {
                 <option>Chemical Engineering</option>
                 <option>Civil Engineering</option>
                 <option>Electrical Engineering</option>
-                <option>Maths and Computing</option>
-                <option>Physics</option>
+                <option>Mathematics and Computing</option>
+                <option>Engineering Physics</option>
                 <option>Material Science and Engineering</option>
               </select>
             </div>
