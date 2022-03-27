@@ -18,7 +18,9 @@ export default function Register() {
     "Egiyok",
     "AiBorne Tech",
     "Stackfusion Private Limited",
-    "Housewise",
+    "Housewise(CRM, Operations Management)",
+    "Housewise(Operations Associate)",
+    "Housewise(Operations Intern(On field))",
     "MyCaptain (The Climber)",
     "Midaas Telesoft Private Limited",
     "UCFER",
@@ -204,7 +206,7 @@ export default function Register() {
         make sure that you meet the company criterias and requirements as
         mentioned on the website. You can check the company list{" "}
         <a
-          href="https://ecell-website.s3.ap-south-1.amazonaws.com/SIP+Company+details+%26+Guidelines.pdf"
+          href="https://drive.google.com/file/d/1tkavtCFs6RXYC2IHMpu_jNiYIq0z3v3S/view"
           target="blank"
         >
           here
@@ -291,7 +293,7 @@ export default function Register() {
             className="frm"
             onSubmit={postSIP}
           >
-            <h2>Startup Internship Program 2k21</h2>
+            <h2>Startup Internship Program 2k22</h2>
             {tab === 1 ? form1 : tab === 2 ? form2 : tab === 3 ? form3 : null}
           </form>
           <Snackbar
