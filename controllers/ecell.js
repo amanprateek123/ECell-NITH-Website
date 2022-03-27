@@ -13,8 +13,8 @@ const uuid = require("uuid");
 const path = require("path");
 
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAZKVCXIS6ETSOMFID",
-  secretAccessKey: "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",
+  accessKeyId: "AKIAZKVCXIS6N4GWAOZP",
+  secretAccessKey: "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",
 });
 
 //gallery
@@ -133,7 +133,7 @@ exports.postSIP = async (req, res) => {
     let myfile = req.file.originalname.split(".");
     const fileType = myfile[myfile.length - 1];
     const params = {
-      Bucket: "ecell-bucket",
+      Bucket: "myecellnithbucket/sip",
       Key: `${uuid.v4()}.${fileType}`,
       Body: prod,
     };
