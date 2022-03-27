@@ -30,13 +30,15 @@ export default function SIP() {
         </div>
         {/* <div className="coming">Coming Soon. Stay Tuned !</div> */}
         <div className="coming">
-        <button id="foot"><button class="button-os"><Link
+        <Link
             to={{
               pathname: `/sip/register`,
             }}
           >
+        <button id="foot"><button class="button-os">
             REGISTER
-          </Link></button></button>
+        </button></button>
+        </Link>
         
           
         </div>
