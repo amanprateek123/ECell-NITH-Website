@@ -44,10 +44,10 @@ class App extends Component {
           <Route path="/team" component={Team} />
           <Route path="/partner" component={Partners} />
           <Route path="/blog" component={Blogs} /> 
-          <Route path="/register" component={Register} /> 
+          {/* <Route path="/register" component={Register} /> */} 
 
           <Route path="/events/:id" component={Events} />
-          <Route path="/sip/register" component={Register} />
+          {/* <Route path="/sip/register" component={Register} /> */}
           <Route component={E404} />
         </Switch>
       </React.Fragment>

@@ -27,20 +27,13 @@ export default function SIP() {
             elucidate to them about various career possibilities and different
             facets of a start-up organization.
           </p>
+            <p> <a href="https://drive.google.com/file/d/1tkavtCFs6RXYC2IHMpu_jNiYIq0z3v3S/view" target="_blank">company list</a></p>
         </div>
         {/* <div className="coming">Coming Soon. Stay Tuned !</div> */}
         <div className="coming">
-        <Link
-            to={{
-              pathname: `/sip/register`,
-            }}
-          >
         <button id="foot"><button class="button-os">
-            REGISTER
-        </button></button>
-        </Link>
-        
-          
+            <a href="https://forms.gle/F8tVohkmfDYoAoeN6" target="_blank">REGISTER</a>
+        </button></button>  
         </div>
 
         {/*  <div class="body3">
