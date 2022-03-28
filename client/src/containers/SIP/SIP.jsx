@@ -35,7 +35,7 @@ export default function SIP() {
               pathname: `/sip/register`,
             }}
           >
-        <button id="foot"><button class="button-os">
+        <button id="foot"><button class="button-os" disabled>
             REGISTER
         </button></button>
         </Link>
