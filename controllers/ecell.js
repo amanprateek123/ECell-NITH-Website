@@ -15,6 +15,7 @@ const path = require("path");
 const s3 = new AWS.S3({
   accessKeyId: "AKIAZKVCXIS6N4GWAOZP",
   secretAccessKey: "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",
+  region: "us-east-1",
 });
 
 //gallery
