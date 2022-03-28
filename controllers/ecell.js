@@ -133,7 +133,7 @@ exports.postSIP = async (req, res) => {
     let myfile = req.file.originalname.split(".");
     const fileType = myfile[myfile.length - 1];
     const params = {
-      Bucket: "myecellnithbucket/sip",
+      Bucket: "testb124",
       Key: `${uuid.v4()}.${fileType}`,
       Body: prod,
     };
