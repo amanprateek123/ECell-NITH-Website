@@ -1,5 +1,6 @@
 import React from "react";
 import "./SIP.scss";
+import { Link } from "react-router-dom";
 
 export default function SIP() {
   return (
@@ -26,10 +27,16 @@ export default function SIP() {
             elucidate to them about various career possibilities and different
             facets of a start-up organization.
           </p>
+            <p> <a href="https://drive.google.com/file/d/1tkavtCFs6RXYC2IHMpu_jNiYIq0z3v3S/view" target="_blank">company list</a></p>
         </div>
-      <div className="coming">Coming Soon. Stay Tuned !</div>
-         
-       {/*  <div class="body3">
+        {/* <div className="coming">Coming Soon. Stay Tuned !</div> */}
+        <div className="coming">
+        <button id="foot"><button class="button-os">
+            <a href="https://forms.gle/F8tVohkmfDYoAoeN6" target="_blank">REGISTER</a>
+        </button></button>  
+        </div>
+
+        {/*  <div class="body3">
           <a className="href1">
             <p>
               After the meticulous round of interviews, we are very ecstatic to

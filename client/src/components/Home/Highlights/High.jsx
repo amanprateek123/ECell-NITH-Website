@@ -18,7 +18,7 @@ export default function High() {
       <h1 className="high">Highlight Events</h1>
       <div className="highlight">
         {event.length > 0 ? (
-          event.slice(1, 4).map(item => (
+          event.slice(0, 3).map(item => (
             <a
           href={`/events/${item._id}`}
           className="back"
